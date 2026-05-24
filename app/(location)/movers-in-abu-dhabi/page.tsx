@@ -9,6 +9,7 @@ import QuoteForm from "@/components/QuoteForm";
 import Services, { Icons } from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import { moversAbuDhabiFAQs } from "@/lib/data";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 import heroImage from "@/public/loc/movers-and-packers-abu-dhabi-hamad-movers.jpg";
 
 const abuDhabiAreas = [
@@ -28,6 +29,17 @@ const abuDhabiAreas = [
   "Mussafah Industrial Area",
   "Corniche",
 ];
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "Movers in Abu Dhabi | Expert Moving Services by Hamad Movers",
+    desc: "Professional movers and packers in Abu Dhabi for homes, villas, and offices. Hamad Movers covers all Abu Dhabi areas with trained crews. Call +971 55 116 5993.",
+  },
+  image: {
+    path: "/loc/movers-and-packers-abu-dhabi-hamad-movers.jpg",
+    alt: "Professional movers and packers in Abu Dhabi – Hamad Movers team loading a truck outside a modern UAE villa",
+  },
+  path: "/movers-in-abu-dhabi",
+});
 const page = () => {
   return (
     <main className="overflow-hidden  -mt-6">
