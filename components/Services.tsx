@@ -1,8 +1,8 @@
 import Image from "next/image";
-import React from "react";
+import { ReactNode } from "react";
 
 // Reusable SVG icons designed to match the outline style in the reference image
-const Icons = {
+export const Icons = {
   House: () => (
     <svg
       className="w-12 h-12 text-primary"
@@ -152,31 +152,52 @@ const servicesData = [
     alt: "Affordable movers in Dubai loading boxes into truck — budget-friendly moving service by Hamad Movers",
   },
 ];
-export default function Services() {
+export default function Services({
+  services,
+  title,
+  desc,
+}: {
+  services?: typeof servicesData;
+  title?: ReactNode;
+  desc?: ReactNode;
+}) {
   return (
     <section className=" mt-28 md:px-0 px-4  ">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-14">
           <h2 className="text-foreground md:text-4xl text-3xl mb-4">
-            Our Moving Services in <span className="text-primary">Dubai</span>
+            {title ? (
+              title
+            ) : (
+              <>
+                Our Moving Services in{" "}
+                <span className="text-primary">Dubai</span>
+              </>
+            )}
           </h2>
           <p className="text-muted-foreground text-base max-w-3xl mx-auto leading-relaxed">
-            We provide a full range of moving services for homes, villas,
-            offices, and businesses. Every job is handled by a trained crew with
-            proper packing materials and a covered truck.
+            {desc ? (
+              desc
+            ) : (
+              <>
+                We provide a full range of moving services for homes, villas,
+                offices, and businesses. Every job is handled by a trained crew
+                with proper packing materials and a covered truck.
+              </>
+            )}
           </p>
         </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {servicesData.map((service, index) => (
+          {(services ? services : servicesData).map((service, index) => (
             <div
               key={index}
               className="bg-white rounded-3xl  flex flex-col pt-[3px] overflow-hidden"
             >
               {/* Card Content Top */}
-              <div className="p-8 pb-6 flex-grow flex flex-col">
+              <div className="md:p-8 p-6 flex-grow flex flex-col">
                 <div className="mb-5">
                   <service.icon />
                 </div>

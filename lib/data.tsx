@@ -12,12 +12,12 @@ export const servicesList = [
 export const locationList = [
   {
     title: "Movers in Sharjah",
-    href: "/",
+    href: "/movers-in-sharjah",
   },
-  { title: "Movers in Ajman", href: "/" },
-  { title: "Movers in Abu Dhabi", href: "/" },
-  { title: "Movers in Al Ain", href: "/" },
-  { title: "Movers in Ras Al Khaimah", href: "/" },
+  { title: "Movers in Ajman", href: "/movers-in-ajman" },
+  { title: "Movers in Abu Dhabi", href: "/movers-in-abu-dhabi" },
+  { title: "Movers in Al Ain", href: "/movers-in-al-ain" },
+  { title: "Movers in Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
 ];
 
 export const HomePageFaqs = [
@@ -146,7 +146,7 @@ export const HomePageFaqs = [
     ),
   },
   {
-    question: "What items can't be transported?",
+    question: "What items can&apos;t be transported?",
     answer: (
       <>
         <p>
@@ -1054,7 +1054,8 @@ export const FurnitureMovingDubaiFaqs = [
   },
 
   {
-    question: "What if the furniture doesn't fit through the door or elevator?",
+    question:
+      "What if the furniture doesn&apos;t fit through the door or elevator?",
     answer: (
       <>
         <p>
@@ -1274,7 +1275,7 @@ export const PackingServicesDubaiFaqs = [
   },
 
   {
-    question: "What items won't packers pack?",
+    question: "What items won&apos;t packers pack?",
     answer: (
       <>
         <p>
@@ -1418,7 +1419,7 @@ export const PackingServicesDubaiFaqs = [
 
 export const AffordableMoversDubaiFaqs = [
   {
-    question: "What's the cheapest way to move in Dubai?",
+    question: "What&apos;s the cheapest way to move in Dubai?",
     answer: (
       <>
         <p>
@@ -1556,7 +1557,7 @@ export const AffordableMoversDubaiFaqs = [
 
   {
     question:
-      "What's the difference between affordable movers and cheap movers in Dubai?",
+      "What&apos;s the difference between affordable movers and cheap movers in Dubai?",
     answer: (
       <>
         <p>
@@ -1580,7 +1581,7 @@ export const AffordableMoversDubaiFaqs = [
 
   {
     question:
-      "What's the best time of year to get a lower price on a move in Dubai?",
+      "What&apos;s the best time of year to get a lower price on a move in Dubai?",
     answer: (
       <>
         <p>Demand patterns can influence moving availability and pricing.</p>
@@ -1637,6 +1638,1224 @@ export const AffordableMoversDubaiFaqs = [
         <p>
           Small moves can often be completed quickly while still receiving the
           same professional handling as larger relocations.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const moversAbuDhabiFAQs = [
+  {
+    question: "Do you provide packing services in Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          Yes — and we give you options. Full packing means our team handles
+          every item in your home, from kitchen plates to wardrobe contents.
+          Partial packing is for people who want to box up personal items
+          themselves but need help with the heavy or fragile stuff. Fragile-only
+          packing covers glassware, artwork, mirrors, and electronics using
+          double-wall boxes and bubble wrap.
+        </p>
+        <p>
+          All packing materials — cartons, tape, stretch wrap, furniture
+          blankets — are included. You don&apos;t need to source anything
+          yourself before moving day.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How much does it cost to move from Dubai to Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          The short answer: it depends on how much you have and whether packing
+          is included. As a rough guide for 2025:
+        </p>
+        <ul>
+          <li>Studio: AED 700 – 1,100</li>
+          <li>1-bedroom apartment: AED 900 – 1,400</li>
+          <li>2-bedroom apartment: AED 1,000 – 1,800 with packing</li>
+          <li>3-bedroom or villa: AED 2,500 – 4,500+</li>
+        </ul>
+        <p>
+          The Dubai–Abu Dhabi route is roughly 150 km, so fuel and travel time
+          factor into the price. We give you a fixed quote upfront — no
+          surprises on the day. Call or WhatsApp us with your property size and
+          move date for an accurate number.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Can you move furniture from Abu Dhabi to Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes, we run both directions on this route regularly. Whether
+          you&apos;re relocating from Abu Dhabi to Dubai or the other way
+          around, the process is the same: one team, one truck, one fixed price.
+        </p>
+        <p>
+          A Dubai–Abu Dhabi move is typically a full-day job when packing is
+          included. Travel time alone is around 1.5 hours each way, so we factor
+          in packing, loading, transit, unloading, and basic setup at the new
+          place. We also handle any tolls — those are covered in your quote.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you serve areas outside Abu Dhabi city?",
+    answer: (
+      <>
+        <p>
+          Yes. We cover Abu Dhabi city and its wider emirate, including Al Ain,
+          Khalifa City, Mohammed Bin Zayed City (MBZ), Al Shamkha, Mussafah,
+          Baniyas, Al Raha, and Saadiyat Island.
+        </p>
+        <p>
+          If you&apos;re in an outlying area or a gated community, just let us
+          know in advance. Some compounds have specific entry requirements for
+          moving trucks — we deal with those regularly and can plan around them.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you work on weekends and public holidays in Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          Yes, 7 days a week including Fridays and public holidays. Moving on a
+          weekend is common in Abu Dhabi since most people are off work.
+        </p>
+        <p>
+          That said, weekends book out faster — especially end-of-month slots
+          when tenancy contracts typically expire. If you have a Saturday or
+          Friday in mind, it&apos;s worth confirming availability a couple of
+          weeks ahead rather than leaving it to the last minute.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How long does a move take in Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          It depends on the size of your home and what services are included.
+          General timelines:
+        </p>
+        <ul>
+          <li>Studio or 1-bedroom: 2–4 hours including packing and setup</li>
+          <li>2-bedroom apartment: 4–6 hours</li>
+          <li>3-bedroom apartment: 6–8 hours</li>
+          <li>Villa (3–5 bedrooms): a full day, sometimes two</li>
+        </ul>
+        <p>
+          The part most people underestimate is coordination — elevator
+          bookings, building access, parking for the truck. In Abu Dhabi&apos;s
+          apartment towers especially, this can add time if not planned ahead.
+          We handle all of that so it doesn&apos;t slow down your day.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Do you handle building move-out permits and elevator bookings in Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          Yes. Most apartment buildings and gated communities in Abu Dhabi
+          require a move-out or move-in permit from facilities management before
+          a truck can enter. Some also require a refundable deposit or proof of
+          the moving company&apos;s insurance.
+        </p>
+        <p>
+          We&apos;re familiar with the requirements across Abu Dhabi buildings
+          and communities, including Khalifa City, Al Raha, Saadiyat, and MBZ.
+          Let us know your building when you book and we&apos;ll sort the
+          paperwork so moving day doesn&apos;t start with a blocked truck.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you offer storage services in Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          Yes. Short-term and long-term storage is available — useful when
+          there&apos;s a gap between your move-out and move-in dates, or when
+          you&apos;re downsizing and need time to sort what stays.
+        </p>
+        <p>
+          Abu Dhabi&apos;s heat is genuinely harsh on furniture, electronics,
+          and wooden pieces during summer months. Our storage uses
+          climate-controlled units to keep your belongings safe. Items are
+          wrapped and inventoried before they go in, so nothing gets lost or
+          mixed up.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Is my furniture insured during the move?",
+    answer: (
+      <>
+        <p>
+          We take care handling every item, and damage is rare. But if you want
+          formal coverage — especially for high-value furniture, electronics, or
+          antiques — we offer transit insurance as an add-on to your move.
+        </p>
+        <p>
+          For local Abu Dhabi moves, basic protection is included. For
+          longer-distance moves or villas with higher-value contents, we&apos;d
+          recommend discussing insurance options when you book. Ask us about
+          coverage limits and we&apos;ll walk you through what makes sense for
+          your move.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How far in advance should I book movers in Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          For a weekday move, 5–7 days&apos; notice is usually enough. For a
+          weekend move — or anything at month-end when leases typically turn
+          over — aim for 2–3 weeks ahead. Fridays and the last few days of the
+          month fill up fast.
+        </p>
+        <p>
+          If your move date is fixed (end of tenancy, handover date), book as
+          soon as you know it. Last-minute moves are sometimes possible, but
+          availability isn&apos;t guaranteed and your preferred time slot may
+          already be taken. A quick call or WhatsApp message is all it takes to
+          check and lock in your date.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const moversSharjahFAQs = [
+  {
+    question: "How much does moving in Sharjah cost?",
+    answer: (
+      <>
+        <p>
+          Sharjah moves are generally more affordable than Dubai. Prices vary by
+          home size, distance, and whether packing is included. As a rough guide
+          for 2025:
+        </p>
+        <ul>
+          <li>Studio: AED 250 – 400</li>
+          <li>1-bedroom apartment: AED 350 – 600</li>
+          <li>2-bedroom apartment: AED 600 – 1,000</li>
+          <li>3-bedroom apartment or small villa: AED 1,000 – 2,000</li>
+          <li>Large villa: AED 2,000 – 4,000+</li>
+        </ul>
+        <p>
+          These are starting points — access conditions, floor level, elevator
+          availability, and the volume of items all affect the final price. We
+          give you a fixed quote before the move, not an estimate that changes
+          on the day. Call or WhatsApp us with your details for an accurate
+          number.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Can you move from Sharjah to Dubai on the same day?",
+    answer: (
+      <>
+        <p>
+          Yes. Most Sharjah-to-Dubai moves are completed within a single day,
+          including packing at origin and setup at the new place.
+        </p>
+        <p>
+          The one thing worth knowing: certain truck sizes face restrictions on
+          Dubai roads during peak hours (typically 7–9 AM and 4–8 PM). We plan
+          around those windows so your truck isn&apos;t sitting on the E311
+          waiting for a clearance period to open up. Early morning starts on
+          this route make a real difference to how the day runs.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you provide packing services in Sharjah?",
+    answer: (
+      <>
+        <p>
+          Yes — full packing, partial packing, and materials-only supply are all
+          available. Full packing means our team boxes everything up room by
+          room, labels each carton, and wraps all furniture before loading.
+          Partial packing works well if you prefer to handle personal items
+          yourself but want professional help with the kitchen, wardrobes, and
+          fragile pieces.
+        </p>
+        <p>
+          All packing materials — cartons, bubble wrap, stretch film, furniture
+          blankets, and tape — are included. You don&apos;t need to source
+          anything from Carrefour the night before.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you cover all areas of Sharjah?",
+    answer: (
+      <>
+        <p>
+          Yes. We cover the full emirate — residential, commercial, and
+          industrial zones. Areas we regularly serve include:
+        </p>
+        <ul>
+          <li>
+            <strong>Residential:</strong> Al Nahda, Al Majaz, Al Qasimia, Al
+            Taawun, Muwaileh, Al Khan, Al Mamzar, Al Jubail
+          </li>
+          <li>
+            <strong>Newer communities:</strong> Aljada, Al Zahia, Tilal City,
+            University City
+          </li>
+          <li>
+            <strong>Industrial / outer Sharjah:</strong> Industrial Area (1–18),
+            Sajaa, Hamriyah Free Zone, Al Saja&apos;a
+          </li>
+        </ul>
+        <p>
+          If your location has narrow roads, compound security checks, or
+          restricted truck access, mention it when you book. We plan around
+          those things rather than discovering them on moving day.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How long does a move in Sharjah take?",
+    answer: (
+      <>
+        <p>
+          It depends on the size of your home and what&apos;s included. As a
+          general guide:
+        </p>
+        <ul>
+          <li>
+            Studio or 1-bedroom: 2–4 hours including packing and unloading
+          </li>
+          <li>2-bedroom apartment: 4–6 hours</li>
+          <li>3-bedroom apartment: 6–8 hours</li>
+          <li>Villa (3–5 bedrooms): a full day, sometimes extending to two</li>
+        </ul>
+        <p>
+          Sharjah apartment buildings — particularly in high-density areas like
+          Al Nahda and Al Majaz — often have limited parking and one service
+          elevator shared by many units. That coordination alone can add an hour
+          if not booked in advance. We handle elevator and access bookings as
+          part of the job.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Do you handle building move-out permits and elevator bookings in Sharjah?",
+    answer: (
+      <>
+        <p>
+          Yes. Many apartment buildings and gated communities in Sharjah require
+          a move-out or move-in permit from the building&apos;s facilities
+          management before a truck is allowed to enter. Some also ask for a
+          refundable security deposit or proof of the moving company&apos;s
+          insurance.
+        </p>
+        <p>
+          Newer compounds like Aljada and Al Zahia typically have more formal
+          procedures than older towers. Some require 48–72 hours&apos; notice;
+          premium compounds can need up to a week. Let us know your building
+          name when you book and we&apos;ll sort the paperwork so the truck
+          doesn&apos;t get stopped at the gate.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Can you move from Sharjah to other emirates — Ajman, Abu Dhabi, or RAK?",
+    answer: (
+      <>
+        <p>
+          Yes. We handle inter-emirate moves from Sharjah to all UAE emirates,
+          including Dubai, Abu Dhabi, Ajman, Ras Al Khaimah, Fujairah, and Al
+          Ain — all in a single day for most home sizes.
+        </p>
+        <p>
+          Sharjah to Ajman is a short haul and straightforward. Sharjah to Abu
+          Dhabi is a longer day but manageable with an early start. Sharjah to
+          RAK or Fujairah takes more planning due to distance — we quote those
+          separately. Whatever the destination, one crew handles the full move
+          from pickup to delivery with no handoffs.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you move offices and commercial premises in Sharjah?",
+    answer: (
+      <>
+        <p>
+          Yes. Office and commercial relocations in Sharjah are a regular part
+          of our work — from small business units in the industrial areas to
+          larger offices in Al Majaz and Al Qasimia.
+        </p>
+        <p>
+          Commercial moves need a bit more planning than home moves. We handle
+          workstation dismantling, IT equipment packing, document boxing, and
+          furniture reassembly at the new premises. Most business owners prefer
+          evening or overnight moves to avoid disrupting operations — we
+          accommodate both. Tell us your office size and preferred timing when
+          you enquire.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you offer storage services in Sharjah?",
+    answer: (
+      <>
+        <p>
+          Yes, short-term and long-term storage is available. This is useful
+          when your move-out date and move-in date don&apos;t line up, when
+          you&apos;re downsizing, or when you&apos;re shipping belongings abroad
+          and need somewhere to hold items in the meantime.
+        </p>
+        <p>
+          Sharjah gets extremely hot between May and September. Furniture,
+          electronics, wood pieces, and certain fabrics can warp or degrade
+          quickly in unregulated storage. Our facilities are climate-controlled,
+          and everything is wrapped and inventoried before it goes in so you
+          know exactly what&apos;s there.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How far in advance should I book movers in Sharjah?",
+    answer: (
+      <>
+        <p>
+          For a straightforward weekday move, 5–7 days is usually enough. For
+          weekend moves — or anything landing at the end of the month when
+          tenancy contracts in Sharjah typically expire — aim for 2–3 weeks
+          ahead. Friday and month-end slots fill up faster than most people
+          expect.
+        </p>
+        <p>
+          If your move date is fixed — end of tenancy, handover from landlord,
+          school start — book as soon as you have the date confirmed. A quick
+          call or WhatsApp message is all it takes to check availability and
+          lock in your slot.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const moversAjmanFAQs = [
+  {
+    question: "How much does a move in Ajman cost?",
+    answer: (
+      <>
+        <p>
+          Ajman is one of the more affordable emirates to move within — prices
+          are generally lower than both Dubai and Sharjah. As a rough guide for
+          2025:
+        </p>
+        <ul>
+          <li>Studio: AED 250 – 400</li>
+          <li>1-bedroom apartment: AED 350 – 600</li>
+          <li>2-bedroom apartment: AED 600 – 950</li>
+          <li>3-bedroom apartment or small villa: AED 950 – 1,800</li>
+          <li>Large villa: AED 1,800 – 3,500+</li>
+        </ul>
+        <p>
+          Final pricing depends on floor level, elevator access, the volume of
+          items, and whether packing is included. We give you a fixed quote
+          before the move — no adjustments on the day. Call or WhatsApp us with
+          your home size and move date for an accurate number.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you provide packing services in Ajman?",
+    answer: (
+      <>
+        <p>
+          Yes — full packing, partial packing, and fragile-only packing are all
+          available. Full packing means the team handles everything: boxing up
+          each room, labelling cartons by destination, and wrapping all
+          furniture before loading. Partial packing suits people who want to
+          handle personal items themselves but need help with the kitchen,
+          wardrobes, and anything breakable.
+        </p>
+        <p>
+          All packing materials — cartons, bubble wrap, stretch film, furniture
+          blankets, corner protectors — come with us. You don&apos;t need to
+          source anything in advance. Furniture dismantling and reassembly at
+          the new property is included too.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Can you move from Ajman to Dubai?",
+    answer: (
+      <>
+        <p>
+          Yes, we run this route regularly. Ajman to Dubai is one of the most
+          common inter-emirate moves in the northern UAE and most jobs are
+          completed in a single day.
+        </p>
+        <p>
+          The main routes are E11, E311, and E611 — which one we use depends on
+          your specific pickup and drop-off areas and the time of day. Peak
+          traffic on E11 near the Sharjah-Dubai border can add real time to a
+          move, so we typically plan an early morning departure to get ahead of
+          it. Salik tolls are included in your quote — nothing is added later.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Are you available on weekends and public holidays in Ajman?",
+    answer: (
+      <>
+        <p>
+          Yes, 7 days a week including Fridays and public holidays. That said,
+          one thing worth knowing: some apartment buildings in Ajman —
+          particularly in the Corniche and Al Nuaimiya areas — restrict moving
+          activity on Fridays or during prayer times.
+        </p>
+        <p>
+          When you book, mention your building name and we&apos;ll check the
+          rules in advance. It&apos;s much better to know before moving day than
+          to have facilities management turn the truck away at the gate.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How long does a move take in Ajman?",
+    answer: (
+      <>
+        <p>
+          It depends on your home size and what&apos;s included. General
+          timelines:
+        </p>
+        <ul>
+          <li>Studio or 1-bedroom: 2–4 hours with packing and setup</li>
+          <li>2-bedroom apartment: 4–6 hours</li>
+          <li>3-bedroom apartment: 5–7 hours</li>
+          <li>Villa (3–5 bedrooms): a full day, sometimes spilling into two</li>
+        </ul>
+        <p>
+          Service lift availability is one of the bigger variables in
+          Ajman&apos;s apartment buildings. When one elevator serves the whole
+          tower, loading and unloading slows down if it isn&apos;t reserved in
+          advance. We book the lift and coordinate parking for the truck so that
+          wait time doesn&apos;t eat into your day.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you cover all areas in Ajman?",
+    answer: (
+      <>
+        <p>
+          Yes, we cover the full emirate. Areas we work in regularly include:
+        </p>
+        <ul>
+          <li>
+            <strong>Residential:</strong> Al Nuaimiya, Al Rashidiya, Al
+            Hamidiya, Al Rawda, Al Rumaila, Al Sawan, Al Mowaihat, Al Jurf, Al
+            Bustan
+          </li>
+          <li>
+            <strong>Newer developments:</strong> Al Zorah, Emirates City, Ajman
+            Corniche, Al Yasmeen
+          </li>
+          <li>
+            <strong>Commercial / industrial:</strong> Ajman Free Zone, Al Jurf
+            Industrial, Al Saja&apos;a
+          </li>
+        </ul>
+        <p>
+          If your location has compound entry requirements, narrow internal
+          roads, or gated community security — Al Zorah in particular has its
+          own access coordination process — mention it when you book. We deal
+          with those regularly and plan around them.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you handle building NOC and move-in permits in Ajman?",
+    answer: (
+      <>
+        <p>
+          Yes. Many buildings in Ajman — especially towers along the Corniche
+          and in Al Nuaimiya — require a move-in or move-out NOC from the
+          building&apos;s facilities management before a moving truck is allowed
+          to enter. Some also require a copy of the moving company&apos;s trade
+          licence and insurance, plus a refundable deposit against elevator
+          damage.
+        </p>
+        <p>
+          We&apos;re familiar with how these requirements work across Ajman
+          buildings and can help you get the paperwork sorted before moving day.
+          The last thing you want is a truck sitting in the car park at 8 AM
+          while someone tries to reach the building manager.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Can you move from Ajman to other emirates — Sharjah, Abu Dhabi, or RAK?",
+    answer: (
+      <>
+        <p>
+          Yes. We handle moves from Ajman to all UAE emirates — Sharjah, Dubai,
+          Abu Dhabi, Ras Al Khaimah, Umm Al Quwain, Fujairah, and Al Ain.
+        </p>
+        <p>
+          Ajman to Sharjah is a short run and usually done in half a day. Ajman
+          to Dubai takes a full day when packing is included. Ajman to Abu Dhabi
+          or RAK are longer hauls — we quote those separately based on home size
+          and timing. One crew manages the full job from pickup to delivery with
+          no handoffs between teams at emirate borders.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you offer storage in Ajman?",
+    answer: (
+      <>
+        <p>
+          Yes, short-term and long-term storage is available. It&apos;s a common
+          need when there&apos;s a gap between your move-out and move-in dates,
+          when you&apos;re waiting for a new property to be handed over, or when
+          you&apos;re relocating abroad and need somewhere to hold furniture in
+          the meantime.
+        </p>
+        <p>
+          Ajman summers are harsh — heat and humidity between May and September
+          can damage wood furniture, leather, and electronics quickly in
+          unregulated units. Our storage is climate-controlled. Items are
+          wrapped and inventoried before going in, so nothing gets mixed up or
+          misplaced during the storage period.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How far in advance should I book movers in Ajman?",
+    answer: (
+      <>
+        <p>
+          For a standard weekday move, 5–7 days&apos; notice is usually enough.
+          For weekend moves — or anything falling at month-end when tenancy
+          contracts in Ajman typically expire — try to book 2–3 weeks ahead.
+          Friday and last-week-of-the-month slots go fast.
+        </p>
+        <p>
+          If your move date is fixed by a tenancy end date or a handover, lock
+          in your slot as soon as you know it. For gated communities like Al
+          Zorah, allow a bit more lead time — around two weeks — since access
+          coordination with development management takes longer than a standard
+          apartment building NOC. A quick call or WhatsApp is all it takes to
+          check availability and confirm your date.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const moversRAKFAQs = [
+  {
+    question: "How much does a move in Ras Al Khaimah cost?",
+    answer: (
+      <>
+        <p>
+          RAK moves are generally more affordable than Dubai, though villa moves
+          in gated communities like Al Hamra Village and Mina Al Arab require
+          specialist handling and factor in slightly differently. As a rough
+          guide for 2025:
+        </p>
+        <ul>
+          <li>Studio: AED 300 – 500</li>
+          <li>1-bedroom apartment: AED 500 – 900</li>
+          <li>2-bedroom apartment: AED 800 – 1,400</li>
+          <li>3-bedroom apartment or small villa: AED 1,200 – 2,200</li>
+          <li>Large villa: AED 2,200 – 4,000+</li>
+        </ul>
+        <p>
+          Access conditions make a real difference to the final price in RAK —
+          narrow lanes in Al Nakheel, gated community entry in Al Hamra, and
+          elevated terrain in mountain-area properties all affect crew size and
+          truck type. We give you a fixed quote after assessing your specific
+          situation, so there are no surprises on moving day.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you serve all areas in Ras Al Khaimah?",
+    answer: (
+      <>
+        <p>
+          Yes. We cover the full emirate — city residential areas, gated coastal
+          communities, mountain-area properties, and industrial and free zone
+          locations. Areas we work in regularly include:
+        </p>
+        <ul>
+          <li>
+            <strong>City and residential:</strong> Al Nakheel, Al Dhait North
+            and South, Al Rawdah, Al Hamra, Al Uraibi, Al Mairid, Dafan Al
+            Nakheel, Al Kharran, Al Qusaidat
+          </li>
+          <li>
+            <strong>Gated and coastal communities:</strong> Al Hamra Village,
+            Mina Al Arab, Al Marjan Island, Flamingo Villas, Bay Residences
+          </li>
+          <li>
+            <strong>Commercial and industrial:</strong> RAKEZ (Ras Al Khaimah
+            Economic Zone), RAK Free Trade Zone, Al Jurf Industrial
+          </li>
+        </ul>
+        <p>
+          Properties in mountainous terrain near Wadi Shawka and Khatt can have
+          access constraints for standard trucks. Mention your exact location
+          when booking and we&apos;ll plan the right vehicle size and route in
+          advance.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How long does a RAK-to-Dubai move take?",
+    answer: (
+      <>
+        <p>
+          Travel between Ras Al Khaimah and Dubai is around 1.5–2 hours each way
+          depending on your exact pickup and drop-off locations and the time of
+          day. For a complete move including packing, loading, transit,
+          unloading, and setup:
+        </p>
+        <ul>
+          <li>1-bedroom apartment: 7–9 hours total</li>
+          <li>2-bedroom apartment: 8–10 hours total</li>
+          <li>3-bedroom apartment or villa: a full day, sometimes two</li>
+        </ul>
+        <p>
+          We primarily use E311 for speed, or E11 for coastal access depending
+          on your route. Early morning departures — around 7 AM — avoid the peak
+          congestion windows on both roads and keep the day on schedule. Salik
+          tolls are included in your quote. If the Dubai destination is inside a
+          gated community (EMAAR, DAMAC, Nakheel), we sort the building NOC
+          before the truck leaves RAK.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you provide packing services in Ras Al Khaimah?",
+    answer: (
+      <>
+        <p>
+          Yes — full packing, partial packing, and fragile-only packing are all
+          available. Full packing means the team boxes up every room, labels
+          cartons clearly, and wraps all furniture before loading. Partial
+          packing works well if you prefer to handle personal items yourself but
+          want professional help with the kitchen, wardrobes, and anything
+          fragile or valuable.
+        </p>
+        <p>
+          All packing materials — heavy-duty cartons, bubble wrap, stretch film,
+          furniture blankets, and corner protectors — are included with the
+          service. For high-value items like artwork, antiques, or delicate
+          pieces from waterfront villas, we can supply custom timber crates.
+          Furniture dismantling and full reassembly at the new property is part
+          of the job.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Are weekend and public holiday moves available in RAK?",
+    answer: (
+      <>
+        <p>
+          Yes, 7 days a week including Fridays and public holidays. Weekend
+          moves are common in RAK since most residents are off work and handover
+          dates often fall on weekends.
+        </p>
+        <p>
+          One thing to be aware of: some apartment buildings and gated
+          communities in RAK — including towers in Al Nakheel and certain
+          properties in Al Hamra Village — have specific rules about moving
+          hours, restricting activity to set windows (typically 8 AM–6 PM) or
+          banning moves on Fridays entirely. We check your building&apos;s rules
+          when you book so there are no issues on the day.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Do you handle move permits and NOC for Al Hamra Village, Mina Al Arab, and Al Marjan Island?",
+    answer: (
+      <>
+        <p>
+          Yes, and this is one of the more important things to get right in RAK.
+          Al Hamra Village (managed by Al Hamra Group) and Mina Al Arab (managed
+          by RAK Properties) both require a formal move-in permit before a truck
+          can enter the gates. Turning up without one means the truck gets
+          turned away — full stop.
+        </p>
+        <p>
+          The permit process for Al Hamra Village requires applying directly
+          with Al Hamra Community Management at least 5–7 working days before
+          your move date. Your moving company must supply a valid trade licence,
+          insurance documents, and vehicle registration as part of that
+          application. Al Marjan Island has similar requirements through its
+          developer portal. We handle all of this documentation when you book
+          with us, so moving day starts at the gate rather than waiting outside
+          it.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How long does a move within Ras Al Khaimah take?",
+    answer: (
+      <>
+        <p>
+          For local moves entirely within RAK, timelines are shorter than
+          cross-emirate jobs. As a general guide:
+        </p>
+        <ul>
+          <li>Studio or 1-bedroom: 2–4 hours including packing and setup</li>
+          <li>2-bedroom apartment: 4–6 hours</li>
+          <li>3-bedroom apartment: 5–7 hours</li>
+          <li>Villa (3–5 bedrooms): a full day</li>
+        </ul>
+        <p>
+          RAK has some access factors that don&apos;t come up in other emirates.
+          Mountain-area and hillside properties may need a smaller relay vehicle
+          if the approach road can&apos;t fit a standard truck. Gated
+          communities like Mina Al Arab also have internal speed and route
+          restrictions that affect how quickly loading proceeds. We assess both
+          addresses before your move date so nothing slows things down on the
+          day.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you offer storage services in Ras Al Khaimah?",
+    answer: (
+      <>
+        <p>
+          Yes, short-term and long-term storage is available. It&apos;s most
+          useful when your move-out and move-in dates don&apos;t line up, when
+          you&apos;re waiting for a new property handover, or when you&apos;re
+          relocating internationally and need a safe place to hold furniture
+          while you get settled.
+        </p>
+        <p>
+          RAK&apos;s coastal humidity — particularly in areas near Mina Al Arab
+          and Al Marjan Island — is harder on wood furniture, leather, and
+          electronics than people expect. Standard storage units without climate
+          control can cause warping and moisture damage within weeks during
+          summer. Our storage is climate-controlled, and everything is
+          inventoried and wrapped before going in, so you know exactly
+          what&apos;s there and in what condition.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Can you move from RAK to other emirates — Sharjah, Abu Dhabi, or Fujairah?",
+    answer: (
+      <>
+        <p>
+          Yes. We handle moves from Ras Al Khaimah to all UAE emirates. Typical
+          single-day runs:
+        </p>
+        <ul>
+          <li>
+            <strong>RAK to Sharjah:</strong> manageable in one day for most
+            apartment sizes
+          </li>
+          <li>
+            <strong>RAK to Dubai:</strong> full day including packing — our most
+            frequent inter-emirate route
+          </li>
+          <li>
+            <strong>RAK to Fujairah:</strong> single day for smaller homes;
+            villas may need two
+          </li>
+          <li>
+            <strong>RAK to Abu Dhabi or Al Ain:</strong> longer haul, quoted
+            separately based on home size
+          </li>
+        </ul>
+        <p>
+          One crew handles the full move from RAK to destination — no handoffs,
+          no third-party subcontractors at emirate borders. If the Dubai or Abu
+          Dhabi destination is inside a managed community, we arrange the
+          receiving NOC before departure so there&apos;s no hold-up at the
+          destination gate.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How far in advance should I book movers in Ras Al Khaimah?",
+    answer: (
+      <>
+        <p>
+          For a standard weekday move within RAK, 5–7 days is usually enough.
+          For weekend slots or month-end moves when tenancy contracts expire,
+          aim for 2–3 weeks ahead. RAK has fewer moving companies than Dubai, so
+          popular slots fill up faster than people expect.
+        </p>
+        <p>
+          For moves involving Al Hamra Village or Mina Al Arab, allow a minimum
+          of 2 weeks — the permit application alone requires 5–7 working days
+          and can&apos;t be rushed. For inter-emirate moves to Dubai where the
+          destination is also inside a managed community, the same applies. Book
+          early, confirm the permit requirements for both properties when you
+          do, and moving day becomes a logistics exercise rather than a
+          scramble.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const moversAlAinFAQs = [
+  {
+    question: "How much does a move in Al Ain cost?",
+    answer: (
+      <>
+        <p>
+          Al Ain moves are competitively priced, though the city&apos;s
+          spread-out layout and villa-heavy communities mean costs vary more
+          than in compact urban emirates. As a rough guide for 2025:
+        </p>
+        <ul>
+          <li>Studio: AED 400 – 700</li>
+          <li>1-bedroom apartment: AED 600 – 950</li>
+          <li>2-bedroom apartment: AED 900 – 1,400</li>
+          <li>3-bedroom apartment or small villa: AED 1,200 – 2,000</li>
+          <li>Large villa: AED 2,000 – 3,500+</li>
+        </ul>
+        <p>
+          Unlike coastal cities where buildings are close together, Al Ain
+          neighborhoods are farther apart — Al Jimi to Al Foah, for example, is
+          a real distance even for a local move. Access conditions inside gated
+          compounds also affect crew size and time. We give you a fixed quote
+          after reviewing your specific situation, so there&apos;s nothing added
+          on the day.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you cover all areas in Al Ain?",
+    answer: (
+      <>
+        <p>
+          Yes. We work across the full city including residential
+          neighbourhoods, gated villa compounds, and industrial and commercial
+          zones. Areas we cover regularly:
+        </p>
+        <ul>
+          <li>
+            <strong>Established residential:</strong> Al Jimi, Al Hili, Zakher,
+            Al Sarooj, Al Muwaiji, Al Khrair, Al Markhaniya, Al Khabisi, Al
+            Mutarad, Al Towayya, Al Qattara
+          </li>
+          <li>
+            <strong>Outer and village areas:</strong> Al Foah, Al Yahar, Al
+            Mairid, Mezyad, Mazyad, Al Ain Oasis district
+          </li>
+          <li>
+            <strong>Industrial and commercial:</strong> Al Ain Industrial Area,
+            ICAD Al Ain, Sanaiya
+          </li>
+        </ul>
+        <p>
+          Al Ain&apos;s gated villa compounds — which make up a large share of
+          residential housing here — each have their own security and access
+          procedures. Some restrict truck entry to morning hours only. Let us
+          know your compound name when you book and we&apos;ll confirm the
+          requirements before moving day.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How long does an Al Ain to Dubai move take?",
+    answer: (
+      <>
+        <p>
+          The drive via E66 is roughly 1.5–2 hours depending on your exact
+          starting point and Dubai destination. For a complete move with
+          packing, loading, transit, unloading, and furniture setup:
+        </p>
+        <ul>
+          <li>1-bedroom apartment: 7–9 hours total</li>
+          <li>2-bedroom apartment: 8–10 hours total</li>
+          <li>3-bedroom apartment or villa: a full day, sometimes two</li>
+        </ul>
+        <p>
+          The E66 desert corridor is the main route, but it comes with specific
+          conditions — heat builds sharply after late morning, and crosswinds
+          between Al Faqa and the desert section can affect taller trucks
+          carrying large furniture. We plan early morning departures (around 7
+          AM) to move through the desert section before peak heat and to arrive
+          at the Dubai destination during morning access windows. During UAE
+          summer months, this timing is not just preferable — it protects both
+          your belongings and the crew under MOHRE&apos;s midday outdoor work
+          regulations.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you offer packing services in Al Ain?",
+    answer: (
+      <>
+        <p>
+          Yes — full packing, partial packing, and fragile-only packing are all
+          available. Full packing means the team works through every room,
+          labels each carton by destination room, and wraps all furniture before
+          loading. Partial packing is for people who prefer to handle personal
+          items themselves but want professional help with the kitchen,
+          wardrobes, electronics, and anything fragile.
+        </p>
+        <p>
+          All packing materials — cartons, bubble wrap, stretch film, furniture
+          blankets, and corner protectors — come with the team. Furniture
+          dismantling and full reassembly at the new location is included. For
+          inter-emirate moves via E66, items are packed and secured specifically
+          for highway transport, where vibration and desert heat inside a sealed
+          truck require a different standard of wrapping than a short local
+          move.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Are weekend and public holiday moves available in Al Ain?",
+    answer: (
+      <>
+        <p>
+          Yes, 7 days a week. Weekend moves are common in Al Ain since residents
+          are typically off work and lease handover dates often fall on
+          weekends.
+        </p>
+        <p>
+          One thing worth knowing: many villa compounds in Al Ain restrict truck
+          entry to specific hours — typically 7 AM to midday or 8 AM to 6 PM —
+          and some do not allow moves on Fridays at all. Community management
+          offices are often closed on Fridays, which means permits can&apos;t be
+          arranged on the day if they weren&apos;t sorted in advance. We check
+          your compound&apos;s rules when you book so there are no surprises at
+          the gate.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How long does a move within Al Ain take?",
+    answer: (
+      <>
+        <p>
+          Al Ain moves tend to take a little longer than equivalent moves in
+          smaller, more compact cities — the neighbourhoods are spread out and
+          intra-city distances are real even for local jobs. General timelines:
+        </p>
+        <ul>
+          <li>Studio or 1-bedroom: 3–5 hours with packing and setup</li>
+          <li>2-bedroom apartment: 5–7 hours</li>
+          <li>3-bedroom apartment: 6–8 hours</li>
+          <li>Villa (3–5 bedrooms): a full day</li>
+        </ul>
+        <p>
+          During summer months (June–September), we schedule Al Ain moves to
+          finish loading before midday when possible. Heat inside a parked truck
+          can spike significantly in the afternoon, which affects electronics,
+          wood furniture, and anything in sealed cartons. Early starts protect
+          your belongings and keep the crew working safely.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you handle compound access and move permits in Al Ain?",
+    answer: (
+      <>
+        <p>
+          Yes, and it matters more in Al Ain than most people expect. A large
+          share of Al Ain housing is in gated villa compounds, and virtually all
+          of them control heavy vehicle entry. Typical requirements include a
+          gate pass or access card issued by the compound management, a copy of
+          the moving company&apos;s trade licence and insurance, and in some
+          cases proof of a valid tenancy contract (Tawtheeq registration).
+        </p>
+        <p>
+          Without the right paperwork, the truck stops at the security
+          checkpoint and doesn&apos;t go further. We gather what&apos;s needed
+          for both the pickup and delivery compounds when you book, so moving
+          day starts at the gate rather than being held up by it.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Can you move from Al Ain to Abu Dhabi, Dubai, or other emirates?",
+    answer: (
+      <>
+        <p>
+          Yes. Al Ain to Abu Dhabi and Al Ain to Dubai are our two most common
+          inter-emirate routes from Al Ain. Typical timelines for a complete
+          move:
+        </p>
+        <ul>
+          <li>
+            <strong>Al Ain to Abu Dhabi:</strong> roughly 1.5 hours&apos; drive;
+            most apartment sizes completed in one full day
+          </li>
+          <li>
+            <strong>Al Ain to Dubai:</strong> 1.5–2 hours via E66; full day for
+            apartments, possibly two for villas
+          </li>
+          <li>
+            <strong>Al Ain to Sharjah, Ajman, or RAK:</strong> longer hauls
+            quoted individually based on home size
+          </li>
+        </ul>
+        <p>
+          One crew handles everything from Al Ain pickup to destination delivery
+          — no handoffs between teams partway through. If the destination is
+          inside a managed community in Dubai or Abu Dhabi, we arrange the
+          receiving NOC before the truck leaves Al Ain.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you offer storage services in Al Ain?",
+    answer: (
+      <>
+        <p>
+          Yes, short-term and long-term storage is available. It&apos;s most
+          useful when there&apos;s a gap between move-out and move-in dates,
+          when you&apos;re waiting for a property handover, or when you&apos;re
+          relocating overseas and need somewhere to hold furniture while you get
+          organised.
+        </p>
+        <p>
+          Al Ain&apos;s desert interior climate is more extreme than coastal
+          emirates — temperatures inside unventilated storage units during
+          summer can damage wood furniture, leather upholstery, and electronics
+          within weeks. Our storage facilities are climate-controlled.
+          Everything is inventoried and wrapped before going in, so you know
+          exactly what&apos;s there and in what condition when you collect it.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "How far in advance should I book movers in Al Ain?",
+    answer: (
+      <>
+        <p>
+          For a straightforward weekday move within Al Ain, 5–7 days is usually
+          enough. For weekend moves or anything at month-end when tenancy
+          contracts typically expire, aim for 2–3 weeks ahead. Al Ain has fewer
+          moving companies than Dubai or Abu Dhabi, so popular slots fill faster
+          than people expect.
+        </p>
+        <p>
+          If your move involves a gated compound at either end, allow a bit of
+          extra lead time — gate pass applications and permit requests from
+          compound management can take 3–5 working days, and some compounds need
+          a week&apos;s notice. If you&apos;re moving to or from Dubai or Abu
+          Dhabi and the destination is also inside a managed community, plan for
+          2 weeks minimum. A quick call or WhatsApp is all it takes to check
+          availability and start the process.
         </p>
       </>
     ),
