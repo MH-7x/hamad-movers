@@ -88,7 +88,11 @@ const googleReviews = [
   },
 ];
 
-const Testimonials = () => (
+const Testimonials = ({
+  cusReviews,
+}: {
+  cusReviews?: typeof googleReviews;
+}) => (
   <section className="mt-16 max-w-6xl md:px-0 px-3 pb-10 mx-auto">
     <div className="flex items-center justify-center text-center flex-col">
       <h2 className=" text-foreground md:text-4xl text-3xl">
@@ -130,7 +134,7 @@ const Testimonials = () => (
       className="max-w-5xl mx-auto mt-10"
     >
       <CarouselContent>
-        {googleReviews.map((review, index) => (
+        {(cusReviews ? cusReviews : googleReviews).map((review, index) => (
           <CarouselItem
             key={index}
             className="md:basis-1/2 lg:basis-1/3 select-none"

@@ -9,7 +9,8 @@ import QuoteForm from "@/components/QuoteForm";
 import Services, { Icons } from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import { moversSharjahFAQs } from "@/lib/data";
-import heroImage from "@/public/loc/movers-and-packers-abu-dhabi-hamad-movers.jpg";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import heroImage from "@/public/loc/movers-and-packers-sharjah-hamad-movers.jpg";
 
 const SharjahAreas = [
   "Al Nahda",
@@ -27,6 +28,18 @@ const SharjahAreas = [
   "Al Ramtha",
   "Al Juraina",
 ];
+
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "Movers in Sharjah | Moving Company in Sharjah",
+    desc: "Reliable movers and packers in Sharjah at honest rates. Hamad Movers handles home, villa & office moves across Sharjah and inter-emirate. Call +971 55 116 5993.",
+  },
+  image: {
+    path: "/loc/movers-and-packers-sharjah-hamad-movers.jpg",
+    alt: "Professional movers and packers in Sharjah – Hamad Movers team loading a white branded truck",
+  },
+  path: "/movers-in-sharjah",
+});
 
 const MoversInSharjah = () => {
   return (
@@ -51,13 +64,13 @@ const MoversInSharjah = () => {
         }
         image={{
           src: heroImage,
-          alt: "Professional movers and packers in Abu Dhabi – Hamad Movers team loading a truck outside a modern UAE villa",
+          alt: "Professional movers and packers in Sharjah – Hamad Movers team loading a white branded truck",
         }}
       />
       <FeatureStats />
       <div className="-mt-10" />
       <QuoteForm />
-      <Testimonials />
+      <Testimonials cusReviews={cusReviews} />
       <div className="-mt-20" />
       <Services
         title={
@@ -133,8 +146,8 @@ const MoversInSharjah = () => {
           "Living in Sharjah and working in Dubai is very common in the UAE. So is moving between the two cities. ",
           "We know the routes, we know the areas, and we know how to time the move to avoid the worst traffic.",
         ]}
-        imageUrl="/loc/furniture-movers-abu-dhabi-packing-service-hamad-movers.jpg"
-        imageAlt="Hamad Movers professional packing and furniture wrapping service inside an Abu Dhabi apartment"
+        imageUrl="/loc/sharjah-to-dubai-movers-hamad-movers.jpg"
+        imageAlt="Hamad Movers team on the Sharjah to Dubai route – professional furniture moving service UAE"
         isReversed={true}
         contactButtonText="Get A Instant Quote"
       />
@@ -149,8 +162,8 @@ const MoversInSharjah = () => {
           "Need to move specific furniture pieces in Sharjah? We wrap, transport, and deliver. ",
           "Disassembly and reassembly included. No minimum number of items.",
         ]}
-        imageUrl="/loc/villa-moving-service-abu-dhabi-hamad-movers.jpg"
-        imageAlt="Hamad Movers team carrying furniture during a villa relocation in Abu Dhabi, UAE"
+        imageUrl="/loc/furniture-movers-sharjah-packing-service-hamad.jpg"
+        imageAlt="Hamad Movers packing and wrapping furniture in Sharjah – professional movers UAE"
         isReversed={false}
         contactButtonText="Contact For Furniture Moving"
       />
@@ -165,3 +178,86 @@ const MoversInSharjah = () => {
 };
 
 export default MoversInSharjah;
+
+const cusReviews = [
+  {
+    name: "Faisal Al-Mansoori",
+    time: "3 days ago",
+    star: 5,
+    review:
+      "Hamad Movers shifted our entire flat in Sharjah Al Nahda without any drama. The guys moved fast and didn't put a single scratch on the walls.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Sarah Jenkins",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Honestly the best move I've had since coming to the UAE. Every fragile kitchen piece came wrapped properly, and the final bill was exactly what they quoted.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Rohan Matthews",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Needed a last-minute villa move inside Sharjah and they pulled it off without a hitch. Crew knew what they were doing — would tell anyone to use them.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Fatima Al-Ali",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "Heavy bedroom sets, big wardrobes — Hamad Movers handled all of it without rushing. They even put everything back together properly in the new place.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "David Miller",
+    time: "4 days ago",
+    star: 5,
+    review:
+      "Really efficient team. They cleared and loaded my 1BR in under three hours — no corners cut, no items thrown around carelessly.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Mariam Al-Blooshi",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "I was genuinely nervous about my glass dining table, but they wrapped it in so much bubble wrap I stopped worrying. Really solid service here in Sharjah.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "James Sinclair",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "Used Hamad Movers a second time and they were just as good. Finding movers who actually show up when they say they will isn't easy — these guys do.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Aisha Siddiqua",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Polite guys, didn't cut corners. Every box landed in the right room without me repeating myself twice. Moving day was way less stressful than I expected.",
+    image: "/ava/29.jpg",
+  },
+  {
+    name: "Michael Fernandes",
+    time: "6 days ago",
+    star: 5,
+    review:
+      "Had them move our small office to Muwaileh. Everything stayed organized and labeled throughout, and they wrapped up well before I thought they would.",
+    image: "/ava/11.jpg",
+  },
+  {
+    name: "Zainab Malik",
+    time: "3 months ago",
+    star: 5,
+    review:
+      "Moved from Sharjah to Ajman without any issues. Their rate was noticeably fairer than other quotes I got, and they actually picked up the phone when I called.",
+    image: "/ava/19.jpg",
+  },
+];
