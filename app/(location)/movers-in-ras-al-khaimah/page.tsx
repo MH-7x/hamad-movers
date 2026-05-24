@@ -9,7 +9,8 @@ import QuoteForm from "@/components/QuoteForm";
 import Services, { Icons } from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import { moversRAKFAQs } from "@/lib/data";
-import heroImage from "@/public/loc/movers-and-packers-abu-dhabi-hamad-movers.jpg";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import heroImage from "@/public/loc/movers-and-packers-ras-al-khaimah-hamad-movers.jpg";
 
 const rasAlKhaimahAreas = [
   "Al Nakheel",
@@ -25,6 +26,18 @@ const rasAlKhaimahAreas = [
   "Al Ma'awah",
   "Al Seer",
 ];
+
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "Movers in Ras Al Khaimah | Moving Company RAK ",
+    desc: "Professional movers and packers in Ras Al Khaimah. Hamad Movers offers home, villa & office moving in RAK and inter-emirate moves. Call +971 55 116 5993.",
+  },
+  image: {
+    path: "/loc/movers-and-packers-ras-al-khaimah-hamad-movers.jpg",
+    alt: "Professional movers and packers in Al Ain – Hamad Movers branded truck outside Al Ain villa compound",
+  },
+  path: "/movers-in-ras-al-khaimah",
+});
 
 const MoversInRasAlKhaimah = () => {
   return (
@@ -57,7 +70,7 @@ const MoversInRasAlKhaimah = () => {
       <FeatureStats />
       <div className="-mt-10" />
       <QuoteForm />
-      <Testimonials />
+      <Testimonials cusReviews={cusReviews} />
       <div className="-mt-20" />
       <Services
         title={
@@ -132,8 +145,8 @@ const MoversInRasAlKhaimah = () => {
         paragraphs={[
           "Moving between RAK and Dubai takes longer than most inter-emirate moves — plan for 2+ hours of driving. For a full apartment, expect the whole day. We coordinate timing carefully so the move is completed without needing an overnight stop.",
         ]}
-        imageUrl="/loc/furniture-movers-abu-dhabi-packing-service-hamad-movers.jpg"
-        imageAlt="Hamad Movers professional packing and furniture wrapping service inside a Ras Al Khaimah apartment"
+        imageUrl="/loc/ras-al-khaimah-to-dubai-movers-hamad-movers.jpg"
+        imageAlt="Hamad Movers truck on Ras Al Khaimah to Dubai route – long distance inter-emirate moving UAE"
         isReversed={true}
         contactButtonText="Get A Instant Quote"
       />
@@ -148,8 +161,8 @@ const MoversInRasAlKhaimah = () => {
         paragraphs={[
           "We move all types of furniture in Ras Al Khaimah — sofas, beds, wardrobes, appliances, and more. If the item needs disassembly, we handle that. Reassembly at the new location is included.",
         ]}
-        imageUrl="/loc/villa-moving-service-abu-dhabi-hamad-movers.jpg"
-        imageAlt="Hamad Movers team carrying furniture during a villa relocation in Ras Al Khaimah, UAE"
+        imageUrl="/loc/villa-movers-rak-furniture-packing-hamad-movers.jpg"
+        imageAlt="Hamad Movers carefully packing and wrapping villa furniture in Ras Al Khaimah – professional moving service"
         isReversed={false}
         contactButtonText="Contact For Furniture Moving"
       />
@@ -164,3 +177,86 @@ const MoversInRasAlKhaimah = () => {
 };
 
 export default MoversInRasAlKhaimah;
+
+const cusReviews = [
+  {
+    name: "Sultan Al-Ali",
+    time: "3 days ago",
+    star: 5,
+    review:
+      "Moved our villa to Mina Al Arab and everything got there in one piece. Outdoor furniture, heavy gym equipment — none of it got scratched or banged up.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Jessica Vance",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Moved from Dubai to Ras Al Khaimah and it went without a hitch. They showed up right on time and took real care wrapping my glass cabinets.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Anand Krishnan",
+    time: "4 days ago",
+    star: 5,
+    review:
+      "Used them for a RAK move and the price they quoted was the price I paid. No add-ons at the end, polite crew throughout — no complaints at all.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Mona Al-Zaabi",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "They dismantled the master bedroom wardrobes and rebuilt everything in the new house without me having to ask twice. Solid work from start to finish.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Oliver Hudson",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Moved to Al Hamra Village and the crew clearly knew what they were doing. Truck was fully loaded in under two hours — no chaos, no wasted time.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Mariam Al-Nuaimi",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "I was genuinely anxious about my artwork surviving the move. They wrapped each piece in bubble wrap and blankets and everything arrived exactly as it left.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Robert Downey",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "Had them handle our office shift in RAKEZ. IT equipment was packed properly, nothing got jumbled, and the whole thing ran without any delays.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Divya Nair",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "Move to Khuzam went about as smoothly as I could've hoped. Every box ended up in the right room without me having to redirect anyone — unpacking was easy.",
+    image: "/ava/29.jpg",
+  },
+  {
+    name: "Christian Wolff",
+    time: "6 days ago",
+    star: 5,
+    review:
+      "They got straight to work, brought decent packing boxes, and didn't rush through the fragile stuff. Nothing to fault really.",
+    image: "/ava/11.jpg",
+  },
+  {
+    name: "Salama Al-Qasimi",
+    time: "3 months ago",
+    star: 5,
+    review:
+      "Fair price for RAK and the team was respectful throughout. They slowed down with the kitchen items rather than just throwing everything in boxes.",
+    image: "/ava/19.jpg",
+  },
+];
