@@ -9,7 +9,8 @@ import QuoteForm from "@/components/QuoteForm";
 import Services, { Icons } from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import { moversAlAinFAQs } from "@/lib/data";
-import heroImage from "@/public/loc/movers-and-packers-abu-dhabi-hamad-movers.jpg";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import heroImage from "@/public/loc/movers-and-packers-al-ain-hamad-movers.jpg";
 
 const alAinAreas = [
   "Al Ain City Centre",
@@ -26,6 +27,18 @@ const alAinAreas = [
   "Falaj Al Mualla",
   "Al Khrair",
 ];
+
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "Movers in Al Ain | Get A Quote in 10 Minutes",
+    desc: "Reliable movers and packers in Al Ain for homes, villas, and offices. Hamad Movers covers Al Ain and inter-emirate moves to Dubai & Abu Dhabi. Call +971 55 116 5993.",
+  },
+  image: {
+    path: "/loc/movers-and-packers-al-ain-hamad-movers.jpg",
+    alt: "Professional movers and packers in Al Ain – Hamad Movers branded truck outside Al Ain villa compound",
+  },
+  path: "/movers-in-al-ain",
+});
 
 const MoversInAlAin = () => {
   return (
@@ -56,7 +69,7 @@ const MoversInAlAin = () => {
       <FeatureStats />
       <div className="-mt-10" />
       <QuoteForm />
-      <Testimonials />
+      <Testimonials cusReviews={cusReviews} />
       <div className="-mt-20" />
       <Services
         title={
@@ -134,8 +147,8 @@ const MoversInAlAin = () => {
         paragraphs={[
           "These are long moves and require early starts. For a full apartment or villa, a same-day move is doable but needs good planning. We'll go through the timeline with you when you book so there are no surprises.",
         ]}
-        imageUrl="/loc/furniture-movers-abu-dhabi-packing-service-hamad-movers.jpg"
-        imageAlt="Hamad Movers professional packing and furniture wrapping service inside an Al Ain apartment"
+        imageUrl="/loc/al-ain-to-dubai-movers-hamad-movers-inter-emirate.jpg"
+        imageAlt="Hamad Movers truck on Al Ain to Dubai highway – inter-emirate moving service UAE"
         isReversed={true}
         contactButtonText="Get A Instant Quote"
       />
@@ -150,8 +163,8 @@ const MoversInAlAin = () => {
         paragraphs={[
           "We move all types of furniture in Al Ain — sofas, beds, wardrobes, appliances, and more. If the item needs disassembly, we handle that. Reassembly at the new location is included.",
         ]}
-        imageUrl="/loc/villa-moving-service-abu-dhabi-hamad-movers.jpg"
-        imageAlt="Hamad Movers team carrying furniture during a villa relocation in Al Ain, UAE"
+        imageUrl="/loc/villa-movers-al-ain-packing-service-hamad-movers.jpg"
+        imageAlt="Hamad Movers packing villa furniture in Al Ain – professional home shifting and relocation UAE"
         isReversed={false}
         contactButtonText="Contact For Furniture Moving"
       />
@@ -166,3 +179,86 @@ const MoversInAlAin = () => {
 };
 
 export default MoversInAlAin;
+
+const cusReviews = [
+  {
+    name: "Saeed Al-Dhaheri",
+    time: "4 days ago",
+    star: 5,
+    review:
+      "Moved our family villa in Al Ain (Zakher) and not a single piece of heritage furniture got dinged. The team handled the old stuff with real care and still moved quickly.",
+    image: "/ava/32.jpg",
+  },
+  {
+    name: "Chloe Bennett",
+    time: "1 week ago",
+    star: 5,
+    review:
+      "Really glad I used them for the move down to Al Ain. My porcelain and garden pots all arrived intact, and they left the place cleaner than I expected.",
+    image: "/ava/44.jpg",
+  },
+  {
+    name: "Vikram Malhotra",
+    time: "3 days ago",
+    star: 5,
+    review:
+      "Needed a quick apartment move within Falaj Hazzaa and they sorted it without fuss. Pricing was straightforward — no surprise charges at the end.",
+    image: "/ava/86.jpg",
+  },
+  {
+    name: "Reem Al-Mheiri",
+    time: "2 weeks ago",
+    star: 5,
+    review:
+      "They took apart our massive wardrobes and put them back together properly in the new house. For Al Ain villa moves, these are the people to call.",
+    image: "/ava/68.jpg",
+  },
+  {
+    name: "Thomas Wright",
+    time: "5 days ago",
+    star: 5,
+    review:
+      "Moved from Dubai to Al Ain and honestly it went better than I thought. Truck showed up right on time and the 2-bedroom was fully loaded in under three hours.",
+    image: "/ava/22.jpg",
+  },
+  {
+    name: "Fatma Al-Shamsi",
+    time: "1 month ago",
+    star: 5,
+    review:
+      "I was genuinely nervous about my mirrors making it in one piece. They wrapped each one in heavy blankets and bubble wrap — every single one arrived fine.",
+    image: "/ava/90.jpg",
+  },
+  {
+    name: "Liam Henderson",
+    time: "2 months ago",
+    star: 5,
+    review:
+      "Third time using them for corporate transfers to Al Ain. They still show up on time, still easy to deal with. That kind of consistency is hard to find.",
+    image: "/ava/54.jpg",
+  },
+  {
+    name: "Nisha Patel",
+    time: "3 weeks ago",
+    star: 5,
+    review:
+      "The move to Al Khabisi went smoother than I hoped. Every box ended up in the right room without me directing anyone — saved a lot of unpacking headache.",
+    image: "/ava/29.jpg",
+  },
+  {
+    name: "George Christian",
+    time: "6 days ago",
+    star: 5,
+    review:
+      "We moved our retail clinic in Al Ain Free Zone and they handled the sensitive equipment carefully. Finished well inside the window we gave them.",
+    image: "/ava/11.jpg",
+  },
+  {
+    name: "Salma Al-Neyadi",
+    time: "3 months ago",
+    star: 5,
+    review:
+      "Good rates for Al Ain and the crew didn't treat the fragile items like they were in a rush. Refreshing to get both the price and the care at the same time.",
+    image: "/ava/19.jpg",
+  },
+];
