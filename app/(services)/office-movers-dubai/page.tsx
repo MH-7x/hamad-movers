@@ -22,11 +22,19 @@ import Testimonials from "@/components/Testimonials";
 import heroImage from "@/public/ser/Office-Movers-in-Dubai.jpg";
 import Image from "next/image";
 import { MovingGallery } from "@/components/Gallery";
-export const metadata = {
-  title: "Office Movers Dubai | Commercial Relocation Services | Hamad Movers",
-  description:
-    "Professional office movers in Dubai. Hamad Movers handles commercial relocations — furniture, IT equipment, files — with minimal disruption. Call +971 55 116 5993.",
-};
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "Office Movers in Dubai | Commercial Relocation Services",
+    desc: "Professional office movers in Dubai. Hamad Movers handles commercial relocations — furniture, IT equipment, files — with minimal disruption. Call +971 55 116 5993.",
+  },
+  image: {
+    path: "/ser/Office-Movers-in-Dubai.jpg",
+    alt: "office movers in dubai, hamad movers team carefully packing and moving office furniture and equipment in Dubai, showcasing our commercial moving services",
+  },
+  path: "/office-movers-dubai",
+});
 
 const OfficeMoversPage = () => {
   return (
@@ -70,7 +78,7 @@ const OfficeMoversPage = () => {
                 <div className="absolute inset-0 bg-primary rounded-4xl -rotate-6 transition-transform hover:rotate-0 duration-500"></div>
                 <Image
                   src={heroImage}
-                  alt="Affordable and professional Hamad Movers team completing a quality home move in Dubai with the same branded truck and trained crew"
+                  alt="office movers in dubai, hamad movers team carefully packing and moving office furniture and equipment in Dubai, showcasing our commercial moving services"
                   fill
                   className="z-10 w-full h-full object-cover rounded-4xl shadow-2xl"
                 />

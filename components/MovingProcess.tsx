@@ -72,7 +72,7 @@ const MovingProcess = ({ className, cusProcess }: Process1Props) => {
                 key={index}
                 className="relative flex flex-col justify-between gap-10 border-t py-8 md:flex-row lg:py-10"
               >
-                <Illustration className="absolute top-4 right-0" />
+                <Illustration className="absolute top-4 right-0 " />
 
                 <div className="flex size-12 items-center justify-center bg-muted px-4 py-1 tracking-tighter rounded-2xl">
                   0{index + 1}
@@ -109,7 +109,7 @@ const Illustration = (props: React.SVGProps<SVGSVGElement>) => {
         y1="2.57422"
         x2="21.5762"
         y2="2.57422"
-        stroke="#FF0000"
+        stroke="#ff9500"
         strokeWidth="4"
       />
       <line
@@ -117,7 +117,7 @@ const Illustration = (props: React.SVGProps<SVGSVGElement>) => {
         y1="19.624"
         x2="19.5762"
         y2="4.57422"
-        stroke="#FF0000"
+        stroke="#ff9500"
         strokeWidth="4"
       />
     </svg>

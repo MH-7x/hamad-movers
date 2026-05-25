@@ -12,6 +12,7 @@ export const servicesList = [
 ];
 
 export const locationList = [
+  { title: "Movers in Dubai", href: "/" },
   { title: "Movers in Sharjah", href: "/" },
   { title: "Movers in Ajman", href: "/" },
   { title: "Movers in Abu Dhabi", href: "/" },
@@ -24,6 +25,7 @@ export const otherPagesList = [
   { title: "About Us", href: "/" },
   { title: "Contact Us", href: "/" },
   { title: "Sitemap", href: "/" },
+  { title: "Movers in UAE", href: "/" },
   { title: "Web Developer", href: "/" },
 ];
 

@@ -22,12 +22,19 @@ import Testimonials from "@/components/Testimonials";
 import { MovingGallery } from "@/components/Gallery";
 import heroImage from "@/public/ser/furniture-movers-dubai-hamad-movers.jpg";
 import Image from "next/image";
-export const metadata = {
-  title:
-    "Furniture Movers Dubai | Safe Furniture Moving Services | Hamad Movers",
-  description:
-    "Professional furniture movers in Dubai. We disassemble, wrap, transport, and reassemble all types of furniture. Affordable rates. Call +971 55 116 5993.",
-};
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "Furniture Movers Dubai | Safe Furniture Moving Services",
+    desc: "Professional furniture movers in Dubai. We disassemble, wrap, transport, and reassemble all types of furniture. Affordable rates. Call +971 55 116 5993.",
+  },
+  image: {
+    path: "/ser/furniture-movers-dubai-hamad-movers.jpg",
+    alt: "Hamad Movers team carefully wrapping and moving a large sofa in Dubai, showcasing our furniture moving services",
+  },
+  path: "/furniture-movers-dubai",
+});
 
 const FurnitureMoversPage = () => {
   return (
@@ -71,7 +78,7 @@ const FurnitureMoversPage = () => {
                 <div className="absolute inset-0 bg-primary rounded-4xl -rotate-6 transition-transform hover:rotate-0 duration-500"></div>
                 <Image
                   src={heroImage}
-                  alt="Affordable and professional Hamad Movers team completing a quality home move in Dubai with the same branded truck and trained crew"
+                  alt="Hamad Movers team carefully wrapping and moving a large sofa in Dubai, showcasing our furniture moving services"
                   fill
                   className="z-10 w-full h-full object-cover rounded-4xl shadow-2xl"
                 />

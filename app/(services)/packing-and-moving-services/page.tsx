@@ -2,9 +2,7 @@ import React from "react";
 
 import {
   Phone,
-  Truck,
   PackageCheck,
-  Wrench,
   MapPin,
   CheckCircle2,
   MessageSquare,
@@ -25,12 +23,19 @@ import Testimonials from "@/components/Testimonials";
 import heroImage from "@/public/ser/packing-moving-services-dubai-hamad-movers.jpg";
 import Image from "next/image";
 import { MovingGallery } from "@/components/Gallery";
-export const metadata = {
-  title:
-    "Packing and Moving Services Dubai | Professional Packers and Movers UAE",
-  description:
-    "Full packing and moving services in Dubai and UAE. Hamad Movers packs your home or office using quality materials — boxes, bubble wrap, stretch film. Call +971 55 116 5993.",
-};
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "Packing and Moving Services Dubai | Hamad Movers",
+    desc: "Full packing and moving services in Dubai and UAE. Hamad Movers packs your home or office using quality materials — boxes, bubble wrap, stretch film. Call +971 55 116 5993.",
+  },
+  image: {
+    path: "/ser/packing-moving-services-dubai-hamad-movers.jpg",
+    alt: "packing and moving services in dubai by hamad movers and packers",
+  },
+  path: "/packing-and-moving-services",
+});
 
 const PackingAndMovingPage = () => {
   return (
@@ -76,7 +81,7 @@ const PackingAndMovingPage = () => {
                 <div className="absolute inset-0 bg-primary rounded-4xl -rotate-6 transition-transform hover:rotate-0 duration-500"></div>
                 <Image
                   src={heroImage}
-                  alt="Affordable and professional Hamad Movers team completing a quality home move in Dubai with the same branded truck and trained crew"
+                  alt="packing and moving services in dubai by hamad movers and packers"
                   fill
                   className="z-10 w-full h-full object-cover rounded-4xl shadow-2xl"
                 />

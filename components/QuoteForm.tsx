@@ -1,5 +1,9 @@
-import { Send } from "lucide-react";
+"use client";
+import { Loader, Send } from "lucide-react";
 import { Button } from "./ui/button";
+import { useState } from "react";
+import { toast } from "sonner";
+import { SendMail } from "@/lib/FormSubmission";
 
 const cities = [
   "Dubai",
@@ -12,7 +16,88 @@ const cities = [
   "Al Ain",
 ];
 
+export type FormDataType = {
+  name: string;
+  email?: string;
+  phone: string;
+  date?: string;
+  movingFrom: string;
+  movingTo: string;
+  message?: string;
+};
+
 export default function QuoteForm() {
+  const [loading, setLoading] = useState(false);
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
+    setLoading(true);
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries()) as FormDataType;
+
+    if (!data.name || !data.phone || !data.movingFrom || !data.movingTo) {
+      toast.error("Please fill in all required fields.", {
+        action: {
+          label: "close",
+          onClick: () => {
+            toast.dismiss();
+          },
+        },
+      });
+      setLoading(false);
+      return;
+    }
+    try {
+      const response = await SendMail({ data });
+      if (!response.success) {
+        toast.error(
+          response.error || "Failed to send quote request. Please try again.",
+          {
+            action: {
+              label: "close",
+              onClick: () => {
+                toast.dismiss();
+              },
+            },
+          },
+        );
+        setLoading(false);
+      } else {
+        toast.success(
+          "Quote request sent successfully! We'll get back to you within 10 minutes.",
+          {
+            action: {
+              label: "ok",
+              onClick: () => {
+                toast.dismiss();
+              },
+            },
+          },
+        );
+        setLoading(false);
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+      }
+    } catch (error) {
+      toast.error(
+        error instanceof Error
+          ? error.message
+          : "An unexpected error occurred. Please try again.",
+        {
+          action: {
+            label: "close",
+            onClick: () => {
+              toast.dismiss();
+            },
+          },
+        },
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const inputClasses =
     "w-full bg-foreground border border-white/30 text-gray-300  placeholder-[#9ca3af]  px-4 py-[14px] text-[15px] focus:outline-none focus:border-primary transition-colors rounded-2xl";
 
@@ -81,17 +166,19 @@ export default function QuoteForm() {
         </div>
 
         {/* Form Section */}
-        <form className="flex flex-col gap-[14px]">
+        <form className="flex flex-col gap-[14px]" onSubmit={handleSubmit}>
           {/* Row 1: Name & Email */}
           <div className="flex flex-col sm:flex-row gap-[14px]">
             <input
               type="text"
+              name="name"
               placeholder="Name"
               className={inputClasses}
               required
             />
             <input
               type="email"
+              name="email"
               placeholder="Email"
               className={inputClasses}
               required
@@ -102,6 +189,7 @@ export default function QuoteForm() {
           <div className="flex flex-col sm:flex-row gap-[14px]">
             <input
               required
+              name="phone"
               type="tel"
               placeholder="Phone"
               className={inputClasses}
@@ -110,6 +198,7 @@ export default function QuoteForm() {
                 though type="date" would be used functionally */}
             <input
               type="date"
+              name="date"
               placeholder="Date"
               className={`${inputClasses} `}
             />
@@ -119,6 +208,7 @@ export default function QuoteForm() {
           <div className="flex flex-col sm:flex-row gap-[14px] empty:text">
             <select
               required
+              name="movingFrom"
               className={`${inputClasses} appearance-none cursor-pointer bg-no-repeat`}
               style={{
                 backgroundImage: `url("${selectArrowSvg}")`,
@@ -143,6 +233,7 @@ export default function QuoteForm() {
 
             <select
               required
+              name="movingTo"
               className={`${inputClasses} appearance-none cursor-pointer bg-no-repeat`}
               style={{
                 backgroundImage: `url("${selectArrowSvg}")`,
@@ -170,6 +261,7 @@ export default function QuoteForm() {
           <div>
             <textarea
               placeholder="Message"
+              name="message"
               rows={8}
               className={`${inputClasses} resize-y block`}
             ></textarea>
@@ -177,8 +269,18 @@ export default function QuoteForm() {
 
           {/* Row 5: Submit Button */}
           <div className="flex md:justify-end justify-center mt-1">
-            <Button className="w-56" size={"lg"}>
-              Send Now <Send />
+            <Button disabled={loading} className="w-56" size={"lg"}>
+              {loading ? (
+                <>
+                  {" "}
+                  Sending <Loader className="animate-spin " />{" "}
+                </>
+              ) : (
+                <>
+                  {" "}
+                  Send Now <Send />
+                </>
+              )}
             </Button>
           </div>
         </form>

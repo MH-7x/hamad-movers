@@ -19,11 +19,19 @@ import MovingProcess from "@/components/MovingProcess";
 import { MovingGallery } from "@/components/Gallery";
 import heroImage from "@/public/ser/affordable-movers-dubai-hamad-movers.jpg";
 import Image from "next/image";
-export const metadata = {
-  title: "Cheap Movers Dubai | Affordable Moving Company UAE | Hamad Movers",
-  description:
-    "Affordable movers and packers in Dubai with transparent pricing and no hidden fees. Hamad Movers offers quality moving at honest rates. Call +971 55 116 5993.",
-};
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "Cheap Movers Dubai | Affordable Moving Company UAE",
+    desc: "Affordable movers and packers in Dubai with transparent pricing and no hidden fees. Hamad Movers offers quality moving at honest rates. Call +971 55 116 5993.",
+  },
+  image: {
+    path: "/ser/affordable-movers-dubai-hamad-movers.jpg",
+    alt: "Affordable and professional Hamad Movers team completing a quality home move in Dubai with the same branded truck and trained crew",
+  },
+  path: "/cheap-movers-dubai",
+});
 
 const CheapMoversPage = () => {
   return (
@@ -277,11 +285,12 @@ const CheapMoversPage = () => {
                   ))}
                 </div>
               </div>
-              <div className="relative">
-                <img
+              <div className="relative aspect-video w-full ">
+                <Image
                   src="/hamad-movers-and-packers-truck.jpg"
                   alt="Hamad Movers Truck"
-                  className="rounded-3xl shadow-xl"
+                  fill
+                  className="object-cover  rounded-3xlz"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary   p-6 rounded-2xl shadow-xl hidden md:block">
                   <p className="text-2xl font-bold text-white!">100%</p>

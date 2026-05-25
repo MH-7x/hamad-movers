@@ -22,11 +22,19 @@ import Testimonials from "@/components/Testimonials";
 import heroImage from "@/public/ser/villa-movers-dubai-hamad-movers.jpg";
 import Image from "next/image";
 import { MovingGallery } from "@/components/Gallery";
-export const metadata = {
-  title: "Villa Movers Dubai | Villa Shifting Services UAE | Hamad Movers",
-  description:
-    "Professional villa movers in Dubai. Hamad Movers handles full villa relocations — heavy furniture, multiple rooms, packing included. Get a free quote today.",
-};
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "Villa Movers Dubai | Villa Shifting Services UAE",
+    desc: "Professional villa movers in Dubai. Hamad Movers handles full villa relocations — heavy furniture, multiple rooms, packing included. Get a free quote today.",
+  },
+  image: {
+    path: "/ser/villa-movers-dubai-hamad-movers.jpg",
+    alt: "hamad movers villa moving services in dubai",
+  },
+  path: "/villa-movers-dubai",
+});
 
 const VillaMoversPage = () => {
   return (
@@ -70,7 +78,7 @@ const VillaMoversPage = () => {
                 <div className="absolute inset-0 bg-primary rounded-4xl -rotate-6 transition-transform hover:rotate-0 duration-500"></div>
                 <Image
                   src={heroImage}
-                  alt="Affordable and professional Hamad Movers team completing a quality home move in Dubai with the same branded truck and trained crew"
+                  alt="hamad movers villa moving services in dubai"
                   fill
                   className="z-10 w-full h-full object-cover rounded-4xl shadow-2xl"
                 />

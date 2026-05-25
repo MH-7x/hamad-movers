@@ -9,7 +9,7 @@ export default function Home() {
       <section>
         <div className="mx-auto w-full max-w-7xl px-4 md:py-16 py-10 md:mt-5">
           <div className="mx-auto mb-12 w-full  text-center md:mb-16 lg:mb-20">
-            <h1 className="mb-4 text-3xl font-semibold md:text-5xl">
+            <h1 className="mb-4 text-3xl  md:text-5xl text-foreground">
               Hamad Movers and Packers in Dubai
             </h1>
             <h3 className="mx-auto text-primary md:mb-5 mb-3 leading-tight max-w-4xl md:text-xl ">
@@ -63,6 +63,7 @@ export default function Home() {
       <Features />
       <MovingProcess />
       <Testimonials />
+      <MovingGallery />
       <FAQSection
         faqs={HomePageFaqs}
         title="Common Questions About Moving in Dubai"
@@ -71,8 +72,6 @@ export default function Home() {
     </main>
   );
 }
-
-import React from "react";
 
 import QuoteForm from "@/components/QuoteForm";
 
@@ -286,3 +285,4 @@ import { FAQSection } from "@/components/FaqsSection";
 import { HomePageFaqs } from "@/lib/data";
 import MovingProcess from "@/components/MovingProcess";
 import FeatureStats from "@/components/FeatureStates";
+import { MovingGallery } from "@/components/Gallery";

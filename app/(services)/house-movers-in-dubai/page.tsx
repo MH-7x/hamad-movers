@@ -23,6 +23,20 @@ import Testimonials from "@/components/Testimonials";
 import heroImage from "@/public/ser/house-movers-dubai-hamad-movers.jpg";
 import Image from "next/image";
 import { MovingGallery } from "@/components/Gallery";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "House Movers in Dubai | Home Shifting Services ",
+    desc: "Professional house movers in Dubai for apartments, studios, and family homes. Hamad Movers handles packing, loading, transport & unloading. Call +971 55 116 5993.",
+  },
+  image: {
+    path: "/ser/house-movers-dubai-hamad-movers.jpg",
+    alt: "hamad movers house moving services in dubai",
+  },
+  path: "/house-movers-in-dubai",
+});
+
 const HouseMoversPage = () => {
   return (
     <>
@@ -63,7 +77,7 @@ const HouseMoversPage = () => {
                 <div className="absolute inset-0 bg-primary rounded-4xl -rotate-6 transition-transform hover:rotate-0 duration-500"></div>
                 <Image
                   src={heroImage}
-                  alt="Affordable and professional Hamad Movers team completing a quality home move in Dubai with the same branded truck and trained crew"
+                  alt="hamad movers house moving services in dubai"
                   fill
                   className="z-10 w-full h-full object-cover rounded-4xl shadow-2xl"
                 />

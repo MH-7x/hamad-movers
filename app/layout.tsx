@@ -5,7 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
+import { Toaster } from "@/components/ui/sonner";
 const HeroFont = localFont({
   src: "./HeroLight-Bold.woff2",
   display: "swap",
@@ -47,6 +47,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Toaster />
         <Footer />
       </body>
     </html>

@@ -1,433 +1,477 @@
 import {
+  Html,
+  Head,
+  Preview,
   Body,
   Container,
-  Column,
-  Head,
   Heading,
-  Hr,
-  Html,
-  Img,
-  Link,
-  Preview,
-  Row,
-  Section,
   Text,
+  Hr,
+  Link,
+  Img,
 } from "@react-email/components";
-import * as React from "react";
-
-export interface FormDataType {
+type FormDataType = {
   name: string;
+  email?: string;
   phone: string;
+  date?: string;
   movingFrom: string;
   movingTo: string;
-  moveType: string;
-  date?: string;
-  size?: string;
   message?: string;
-}
+};
 
-interface QuoteRequestEmailProps {
-  formData: FormDataType;
-}
+export type EmailTemplateProps = {
+  data: FormDataType;
+  companyName?: string;
+  logoUrl?: string;
+  primaryColor?: string;
+  secondaryColor?: string;
+  textColor?: string;
+  showLogo?: boolean;
+};
 
-export const QuoteRequestEmail = ({ formData }: QuoteRequestEmailProps) => {
-  const { name, phone, movingFrom, movingTo, moveType, date, size, message } =
-    formData;
+const EmailTemplate: React.FC<EmailTemplateProps> = ({
+  data,
+  companyName = "Hamad Movers",
+  logoUrl = "https://hamadmoversuae.vercel.app/logo.svg",
+  primaryColor = "#ff9500",
+  secondaryColor = "#373642",
+  textColor = "#858585",
+  showLogo = true,
+}) => {
+  const { name, email, phone, date, movingFrom, movingTo, message } = data;
+
+  // Custom typography style presets conforming to constraints
+  const mainStyle = {
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+    backgroundColor: "#f9fafb",
+    color: textColor,
+    padding: "40px 0",
+  };
+
+  const containerStyle = {
+    backgroundColor: "#ffffff",
+    borderWidth: "1px",
+    borderStyle: "solid",
+    borderColor: "#e5e7eb",
+    borderRadius: "16px",
+    boxShadow:
+      "0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05)",
+    width: "100%",
+    maxWidth: "580px",
+    margin: "0 auto",
+    overflow: "hidden",
+  };
+
+  const topBannerStyle = {
+    backgroundColor: primaryColor,
+    height: "6px",
+    width: "100%",
+  };
+
+  const contentPadding = {
+    padding: "32px 40px 40px 40px",
+  };
+
+  const tagLineStyle = {
+    color: primaryColor,
+    fontSize: "12px",
+    fontWeight: "700",
+    letterSpacing: "0.1em",
+    textTransform: "uppercase" as const,
+    marginBottom: "4px",
+    fontFamily: 'SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace',
+  };
+
+  const quoteIdStyle = {
+    color: secondaryColor,
+    fontSize: "13px",
+    fontWeight: "500",
+    fontFamily: 'SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace',
+    float: "right" as const,
+    marginTop: "20px",
+  };
+
+  const h1Style = {
+    color: secondaryColor,
+    fontSize: "24px",
+    fontWeight: "800",
+    lineHeight: "1.25",
+    letterSpacing: "-0.02em",
+    margin: "0 0 16px 0",
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  };
+
+  const introParagraph = {
+    color: textColor,
+    fontSize: "14px",
+    lineHeight: "1.6",
+    margin: "0 0 24px 0",
+  };
+
+  // Modern Route Details Styling (The Journey)
+  const journeyCardStyle = {
+    backgroundColor: "#fafafa",
+    borderRadius: "12px",
+    borderWidth: "1px",
+    borderStyle: "solid",
+    borderColor: "#f0f0f0",
+    padding: "24px",
+    marginBottom: "28px",
+  };
+
+  const nodeHeaderStyle = {
+    fontSize: "10px",
+    fontWeight: "700",
+    textTransform: "uppercase" as const,
+    color: primaryColor,
+    letterSpacing: "0.08em",
+    marginBottom: "4px",
+    fontFamily: 'SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace',
+  };
+
+  const nodeValueStyle = {
+    fontSize: "15px",
+    fontWeight: "700",
+    color: secondaryColor,
+    lineHeight: "1.4",
+    margin: "0",
+  };
+
+  // Table information grid styles
+  const tableHeaderStyle = {
+    fontSize: "11px",
+    fontWeight: "700",
+    textTransform: "uppercase" as const,
+    color: secondaryColor,
+    padding: "10px 12px",
+    textAlign: "left" as const,
+    backgroundColor: "#f4f4f5",
+    borderRadius: "4px",
+  };
+
+  const tableLabelStyle = {
+    fontSize: "13px",
+    fontWeight: "600",
+    color: secondaryColor,
+    padding: "12px 12px",
+    borderBottomWidth: "1px",
+    borderStyle: "solid" as const,
+    borderColor: "#f3f4f6",
+    width: "120px",
+  };
+
+  const tableValueStyle = {
+    fontSize: "13px",
+    color: textColor,
+    padding: "12px 12px",
+    borderBottomWidth: "1px",
+    borderStyle: "solid" as const,
+    borderColor: "#f3f4f6",
+  };
+
+  // Message callout
+  const messageBoxStyle = {
+    backgroundColor: "#ffffff",
+    borderLeftWidth: "4px",
+    borderLeftStyle: "solid" as const,
+    borderLeftColor: primaryColor,
+    borderRadius: "0 8px 8px 0",
+    padding: "16px 20px",
+    marginTop: "24px",
+    marginBottom: "24px",
+    boxShadow: "0 1px 3px rgba(0, 0, 0, 0.02)",
+    borderWidth: "1px 1px 1px 4px",
+    borderStyle: "solid" as const,
+    borderColor: "#f3f4f6 #f3f4f6 #f3f4f6 " + primaryColor,
+  };
+
+  const messageLabelStyle = {
+    fontSize: "12px",
+    fontWeight: "700",
+    color: secondaryColor,
+    textTransform: "uppercase" as const,
+    letterSpacing: "0.05em",
+    marginBottom: "6px",
+    marginTop: "0",
+  };
+
+  const messageTextStyle = {
+    fontSize: "13px",
+    lineHeight: "1.5",
+    color: textColor,
+    margin: "0",
+    fontStyle: "italic",
+  };
+
+  // Button styles
+  const btnStyle = {
+    backgroundColor: primaryColor,
+    color: "#ffffff",
+    borderRadius: "8px",
+    fontSize: "14px",
+    fontWeight: "700",
+    textDecoration: "none",
+    textAlign: "center" as const,
+    display: "inline-block",
+    padding: "14px 28px",
+    marginTop: "16px",
+    marginBottom: "16px",
+    WebkitFontSmoothing: "antialiased",
+  };
+
+  const footerStyle = {
+    textAlign: "center" as const,
+    padding: "32px 40px",
+    backgroundColor: secondaryColor,
+    color: "#a3a3a3",
+  };
+
+  const footerTextStyle = {
+    fontSize: "12px",
+    lineHeight: "1.6",
+    color: "#a3a3a3",
+    margin: "0 0 12px 0",
+  };
+
+  const footerLinkStyle = {
+    color: "#ffffff",
+    textDecoration: "underline",
+    fontSize: "12px",
+    fontWeight: "600",
+  };
 
   return (
-    <Html>
+    <Html lang="en">
       <Head />
-      <Preview>
-        New Moving Quote Request from {name} — {movingFrom} → {movingTo}
-      </Preview>
-      <Body style={main}>
-        <Container style={container}>
-          {/* ── Accent Bar ── */}
-          <Section style={accentBar} />
+      <Preview>Hamad Movers Relocation Booking details for {name}</Preview>
+      <Body style={mainStyle}>
+        <Container style={containerStyle}>
+          {/* Top colored aesthetic strip */}
+          <div style={topBannerStyle} />
 
-          {/* ── Title Section ── */}
-          <Section style={titleSection}>
-            <Row>
-              <Column align="center">
-                <Text style={tagline}>NEW QUOTE REQUEST</Text>
-                <Heading as="h1" style={mainHeading}>
-                  Moving Quote Details
-                </Heading>
-                <Text style={subtitle}>
-                  A new customer has submitted a moving quote request. Review
-                  the details below.
-                </Text>
-              </Column>
-            </Row>
-          </Section>
+          {/* Email Body Core */}
+          <div style={contentPadding}>
+            {/* Logo/Header */}
+            <table style={{ width: "100%", marginBottom: "32px" }}>
+              <tbody>
+                <tr>
+                  <td>
+                    {showLogo ? (
+                      <Img
+                        src={logoUrl}
+                        width="140"
+                        height="auto"
+                        alt={companyName}
+                        style={{ display: "block", marginBottom: "8px" }}
+                      />
+                    ) : (
+                      <span
+                        style={{
+                          fontSize: "20px",
+                          fontWeight: "800",
+                          color: secondaryColor,
+                        }}
+                      >
+                        {companyName}
+                      </span>
+                    )}
+                  </td>
+                  <td style={{ textAlign: "right" }}>
+                    <span style={tagLineStyle}>Booking Request</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
-          <Hr style={divider} />
+            {/* Introductory Header */}
+            <Heading style={h1Style}>Relocation Inquiry Received</Heading>
+            <Text style={introParagraph}>
+              Mr. <strong>{name}</strong>, contact you for moving quote. Below
+              are the details of their request. Please review and reach out to
+              them promptly to assist with their moving needs.
+            </Text>
 
-          {/* ── Customer Info Card ── */}
-          <Section style={cardSection}>
-            <Text style={sectionLabel}>CUSTOMER INFORMATION</Text>
-            <Section style={card}>
-              <Row style={infoRow}>
-                <Column style={infoLabelCol}>
-                  <Text style={infoLabel}>Full Name</Text>
-                </Column>
-                <Column style={infoValueCol}>
-                  <Text style={infoValue}>{name}</Text>
-                </Column>
-              </Row>
-              <Hr style={cardDivider} />
-              <Row style={infoRow}>
-                <Column style={infoLabelCol}>
-                  <Text style={infoLabel}>Phone</Text>
-                </Column>
-                <Column style={infoValueCol}>
-                  <Text style={infoValue}>
-                    <Link href={`tel:${phone}`} style={phoneLink}>
+            {/* The Moving Journey Road blocks */}
+            <div style={journeyCardStyle}>
+              <table style={{ width: "100%", borderCollapse: "collapse" }}>
+                <tbody>
+                  <tr>
+                    <td style={{ verticalAlign: "top", width: "45%" }}>
+                      <div style={nodeHeaderStyle}> Moving From</div>
+                      <div style={nodeValueStyle}>
+                        {movingFrom || "Not Specified"}
+                      </div>
+                    </td>
+                    <td
+                      style={{
+                        verticalAlign: "middle",
+                        textAlign: "center",
+                        width: "10%",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "18px",
+                          color: primaryColor,
+                          fontWeight: "800",
+                        }}
+                      >
+                        ➔
+                      </span>
+                    </td>
+                    <td style={{ verticalAlign: "top", width: "45%" }}>
+                      <div style={nodeHeaderStyle}> Moving To</div>
+                      <div style={nodeValueStyle}>
+                        {movingTo || "Not Specified"}
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            {/* Core Details Table */}
+            <table
+              style={{
+                width: "100%",
+                borderCollapse: "collapse",
+                marginBottom: "24px",
+              }}
+            >
+              <thead>
+                <tr>
+                  <th colSpan={2} style={tableHeaderStyle}>
+                    Contact & Logistics Summary
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style={tableLabelStyle}>Customer Name</td>
+                  <td style={tableValueStyle}>
+                    <strong>{name}</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td style={tableLabelStyle}>Phone</td>
+                  <td style={tableValueStyle}>
+                    <Link
+                      href={`tel:${phone}`}
+                      style={{
+                        color: secondaryColor,
+                        textDecoration: "none",
+                        fontWeight: "600",
+                      }}
+                    >
                       {phone}
                     </Link>
-                  </Text>
-                </Column>
-              </Row>
-            </Section>
-          </Section>
+                  </td>
+                </tr>
+                {email && (
+                  <tr>
+                    <td style={tableLabelStyle}>Email</td>
+                    <td style={tableValueStyle}>
+                      <Link
+                        href={`mailto:${email}`}
+                        style={{ color: primaryColor, textDecoration: "none" }}
+                      >
+                        {email}
+                      </Link>
+                    </td>
+                  </tr>
+                )}
+                {date && (
+                  <tr>
+                    <td style={tableLabelStyle}>Moving Date</td>
+                    <td style={tableValueStyle}>
+                      <span
+                        style={{
+                          backgroundColor: "#fffbeb",
+                          padding: "4px 8px",
+                          borderRadius: "4px",
+                          color: "#b45309",
+                          fontWeight: "600",
+                          fontSize: "12px",
+                        }}
+                      >
+                        📅 {date}
+                      </span>
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
 
-          {/* ── Move Details Card ── */}
-          <Section style={cardSection}>
-            <Text style={sectionLabel}>MOVE DETAILS</Text>
-            <Section style={card}>
-              {/* Route Visualization */}
-              <Section style={routeSection}>
-                <Row>
-                  <Column align="center">
-                    <Text style={routeFrom}>{movingFrom}</Text>
-                    <Text style={routeArrow}>→</Text>
-                    <Text style={routeTo}>{movingTo}</Text>
-                  </Column>
-                </Row>
-              </Section>
+            {/* Client Notes Section */}
+            {message && (
+              <div style={messageBoxStyle}>
+                <h4 style={messageLabelStyle}>
+                  Special Instructions & Message
+                </h4>
+                <p style={messageTextStyle}>&quot;{message}&quot;</p>
+              </div>
+            )}
 
-              <Hr style={cardDivider} />
+            {/* Action Call for Client */}
+            <div
+              style={{
+                textAlign: "center",
+                marginTop: "32px",
+                marginBottom: "8px",
+              }}
+            >
+              <Link href={`tel:${phone}`} style={btnStyle}>
+                📞 Call Customer Directly
+              </Link>
+            </div>
+          </div>
 
-              <Row style={infoRow}>
-                <Column style={infoLabelCol}>
-                  <Text style={infoLabel}>Move Type</Text>
-                </Column>
-                <Column style={infoValueCol}>
-                  <Text style={infoValue}>{moveType}</Text>
-                </Column>
-              </Row>
-
-              {date && (
-                <>
-                  <Hr style={cardDivider} />
-                  <Row style={infoRow}>
-                    <Column style={infoLabelCol}>
-                      <Text style={infoLabel}>Preferred Date</Text>
-                    </Column>
-                    <Column style={infoValueCol}>
-                      <Text style={infoValue}>{date}</Text>
-                    </Column>
-                  </Row>
-                </>
-              )}
-
-              {size && (
-                <>
-                  <Hr style={cardDivider} />
-                  <Row style={infoRow}>
-                    <Column style={infoLabelCol}>
-                      <Text style={infoLabel}>Size / Volume</Text>
-                    </Column>
-                    <Column style={infoValueCol}>
-                      <Text style={infoValue}>{size}</Text>
-                    </Column>
-                  </Row>
-                </>
-              )}
-            </Section>
-          </Section>
-
-          {/* ── Message Card (conditional) ── */}
-          {message && (
-            <Section style={cardSection}>
-              <Text style={sectionLabel}>ADDITIONAL MESSAGE</Text>
-              <Section style={messageCard}>
-                <Text style={messageText}>{message}</Text>
-              </Section>
-            </Section>
-          )}
-
-          {/* ── CTA ── */}
-          <Section style={ctaSection}>
-            <Row>
-              <Column align="center">
-                <Link href={`tel:${phone}`} style={ctaButton}>
-                  Call {name} Now
-                </Link>
-              </Column>
-            </Row>
-          </Section>
-
-          <Hr style={divider} />
-
-          {/* ── Footer ── */}
-          <Section style={footer}>
-            <Row>
-              <Column align="center">
-                <Text style={footerCompany}>
-                  Najm Al Dhahabih Furniture Movers LLC
-                </Text>
-                <Text style={footerText}>
-                  This is an automated notification from your website contact
-                  form.
-                </Text>
-                <Text style={footerText}>
-                  Please respond to this inquiry as soon as possible.
-                </Text>
-              </Column>
-            </Row>
-          </Section>
+          {/* Clean Modern Footer */}
+          <div style={footerStyle}>
+            <Text style={footerTextStyle}>
+              <strong>Hamad Movers UAE</strong>
+              <br />
+              Authorized Relocation Specialists • Movers & Packers Dubai, Abu
+              Dhabi & Sharjah
+            </Text>
+            <Text
+              style={{ ...footerTextStyle, fontSize: "11px", opacity: 0.8 }}
+            >
+              This is an automated request acknowledgment. Our typical quote
+              response time is under 15 minutes during operational hours (8:00
+              AM - 10:00 PM).
+            </Text>
+            <Hr style={{ borderColor: "#4b4a57", margin: "18px 0" }} />
+            <table style={{ width: "100%" }}>
+              <tbody>
+                <tr>
+                  <td style={{ textAlign: "center" }}>
+                    <Link
+                      href="https://hamadmoversuae.vercel.app"
+                      style={footerLinkStyle}
+                    >
+                      Visit Website
+                    </Link>
+                    <span style={{ color: "#4b4a57", margin: "0 10px" }}>
+                      |
+                    </span>
+                    <Link
+                      href="mailto:info@hamadmoversuae.com"
+                      style={footerLinkStyle}
+                    >
+                      Email Support
+                    </Link>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </Container>
       </Body>
     </Html>
   );
 };
-
-QuoteRequestEmail.PreviewProps = {
-  formData: {
-    name: "Ahmed Al Rashid",
-    phone: "+971 50 123 4567",
-    movingFrom: "Dubai Marina",
-    movingTo: "Abu Dhabi Corniche",
-    moveType: "Villa / House",
-    date: "2026-04-15",
-    size: "3 Bedroom Villa",
-    message:
-      "I have some fragile antique furniture that needs extra care during packing. Also, I need temporary storage for about a week before the move-in date.",
-  },
-} as QuoteRequestEmailProps;
-
-export default QuoteRequestEmail;
-
-/* ─────────────────────────── Styles ─────────────────────────── */
-
-const colors = {
-  primary: "#FF2828",
-  secondary: "#00357A",
-  text: "#666666",
-  lightGray: "#F7F8FA",
-  borderGray: "#E8ECF1",
-  white: "#FFFFFF",
-};
-
-const main: React.CSSProperties = {
-  backgroundColor: "#F0F2F5",
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-  padding: "40px 0",
-};
-
-const container: React.CSSProperties = {
-  backgroundColor: colors.white,
-  margin: "0 auto",
-  maxWidth: "600px",
-  borderRadius: "12px",
-  overflow: "hidden",
-  boxShadow: "0 4px 24px rgba(0, 0, 0, 0.06)",
-};
-
-const header: React.CSSProperties = {
-  backgroundColor: colors.secondary,
-  padding: "32px 40px 28px",
-};
-
-const logo: React.CSSProperties = {
-  margin: "0 auto",
-};
-
-const accentBar: React.CSSProperties = {
-  height: "4px",
-  background: `linear-gradient(90deg, ${colors.primary} 0%, ${colors.primary} 40%, ${colors.secondary} 100%)`,
-};
-
-const titleSection: React.CSSProperties = {
-  padding: "36px 40px 8px",
-};
-
-const tagline: React.CSSProperties = {
-  fontSize: "11px",
-  fontWeight: 700,
-  letterSpacing: "2.5px",
-  color: colors.primary,
-  textTransform: "uppercase" as const,
-  margin: "0 0 12px",
-  textAlign: "center" as const,
-};
-
-const mainHeading: React.CSSProperties = {
-  fontSize: "26px",
-  fontWeight: 700,
-  color: colors.secondary,
-  margin: "0 0 12px",
-  textAlign: "center" as const,
-  lineHeight: "1.3",
-};
-
-const subtitle: React.CSSProperties = {
-  fontSize: "15px",
-  lineHeight: "1.6",
-  color: colors.text,
-  margin: "0",
-  textAlign: "center" as const,
-};
-
-const divider: React.CSSProperties = {
-  borderColor: colors.borderGray,
-  borderWidth: "1px",
-  margin: "8px 40px",
-};
-
-const cardSection: React.CSSProperties = {
-  padding: "12px 40px 8px",
-};
-
-const sectionLabel: React.CSSProperties = {
-  fontSize: "11px",
-  fontWeight: 700,
-  letterSpacing: "2px",
-  color: colors.secondary,
-  textTransform: "uppercase" as const,
-  margin: "0 0 12px",
-  opacity: 0.6,
-};
-
-const card: React.CSSProperties = {
-  backgroundColor: colors.lightGray,
-  borderRadius: "10px",
-  padding: "4px 24px",
-  border: `1px solid ${colors.borderGray}`,
-};
-
-const infoRow: React.CSSProperties = {
-  padding: "0",
-};
-
-const infoLabelCol: React.CSSProperties = {
-  width: "140px",
-  verticalAlign: "top" as const,
-};
-
-const infoValueCol: React.CSSProperties = {
-  verticalAlign: "top" as const,
-};
-
-const infoLabel: React.CSSProperties = {
-  fontSize: "13px",
-  fontWeight: 600,
-  color: colors.secondary,
-  margin: "14px 0",
-  opacity: 0.7,
-};
-
-const infoValue: React.CSSProperties = {
-  fontSize: "15px",
-  color: colors.text,
-  margin: "14px 0",
-  fontWeight: 500,
-};
-
-const phoneLink: React.CSSProperties = {
-  color: colors.primary,
-  textDecoration: "none",
-  fontWeight: 600,
-};
-
-const cardDivider: React.CSSProperties = {
-  borderColor: colors.borderGray,
-  borderWidth: "1px",
-  margin: "0",
-};
-
-const routeSection: React.CSSProperties = {
-  padding: "12px 0 8px",
-};
-
-const routeFrom: React.CSSProperties = {
-  fontSize: "16px",
-  fontWeight: 700,
-  color: colors.secondary,
-  margin: "0 0 4px",
-  textAlign: "center" as const,
-};
-
-const routeArrow: React.CSSProperties = {
-  fontSize: "22px",
-  color: colors.primary,
-  margin: "2px 0",
-  textAlign: "center" as const,
-  fontWeight: 700,
-};
-
-const routeTo: React.CSSProperties = {
-  fontSize: "16px",
-  fontWeight: 700,
-  color: colors.secondary,
-  margin: "4px 0 0",
-  textAlign: "center" as const,
-};
-
-const messageCard: React.CSSProperties = {
-  backgroundColor: colors.lightGray,
-  borderRadius: "10px",
-  padding: "20px 24px",
-  borderLeft: `4px solid ${colors.primary}`,
-  border: `1px solid ${colors.borderGray}`,
-  borderLeftColor: colors.primary,
-  borderLeftWidth: "4px",
-};
-
-const messageText: React.CSSProperties = {
-  fontSize: "14px",
-  lineHeight: "1.7",
-  color: colors.text,
-  margin: "0",
-  fontStyle: "italic" as const,
-};
-
-const ctaSection: React.CSSProperties = {
-  padding: "24px 40px 16px",
-};
-
-const ctaButton: React.CSSProperties = {
-  backgroundColor: colors.primary,
-  color: colors.white,
-  fontSize: "15px",
-  fontWeight: 700,
-  textDecoration: "none",
-  textAlign: "center" as const,
-  display: "inline-block",
-  padding: "14px 40px",
-  borderRadius: "8px",
-  letterSpacing: "0.3px",
-};
-
-const footer: React.CSSProperties = {
-  padding: "24px 40px 36px",
-};
-
-const footerCompany: React.CSSProperties = {
-  fontSize: "14px",
-  fontWeight: 700,
-  color: colors.secondary,
-  margin: "0 0 8px",
-  textAlign: "center" as const,
-};
-
-const footerText: React.CSSProperties = {
-  fontSize: "12px",
-  lineHeight: "1.5",
-  color: colors.text,
-  margin: "0",
-  textAlign: "center" as const,
-  opacity: 0.7,
-};
+export default EmailTemplate;
