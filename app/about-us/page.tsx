@@ -11,12 +11,20 @@ import {
   ShieldCheck,
   Clock,
 } from "lucide-react";
+import Image from "next/image";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 
-/**
- * SEO Meta (for your reference or Next.js Head)
- * Title: About Hamad Movers and Packers | Moving Company Dubai UAE
- * Description: Hamad Movers and Packers is a trusted moving company in Dubai serving homes, villas, offices, and businesses across the UAE.
- */
+export const metadata = MetadataTemplate({
+  meta: {
+    title: "About Hamad Movers and Packers | Moving Company Dubai",
+    desc: "Hamad Movers and Packers is a trusted moving company in Dubai serving homes, villas, offices, and businesses across the UAE, contact us for a free quote.",
+  },
+  image: {
+    path: "/hamad-movers-and-packers-in-dubai.jpg",
+    alt: "Hamad Movers and Packers in Dubai",
+  },
+  path: "",
+});
 
 const AboutUsPage = () => {
   return (
@@ -44,15 +52,17 @@ const AboutUsPage = () => {
                   size="lg"
                   className="rounded-full px-8"
                 >
-                  Our Services
+                  WhatsApp Us
                 </Button>
               </div>
             </div>
             <div className="flex-1 relative w-full aspect-4/3 rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1600518464441-9154a4dba246?auto=format&fit=crop&q=80&w=1200"
-                alt="Professional Moving Team"
-                className="object-cover w-full h-full"
+              <Image
+                src={"/about-hamad-movers-and-packers.jpg"}
+                alt="about hamad movers and packers in dubai"
+                fill
+                loading="eager"
+                className="object-cover"
               />
             </div>
           </div>
@@ -65,28 +75,47 @@ const AboutUsPage = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1 grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <img
-                  src="https://images.unsplash.com/photo-1586769852044-692d6e3703f0?auto=format&fit=crop&q=80&w=600"
-                  alt="Packing"
-                  className="rounded-xl aspect-square object-cover shadow-sm"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?auto=format&fit=crop&q=80&w=600"
-                  alt="Moving Truck"
-                  className="rounded-xl aspect-3/4 object-cover shadow-sm"
-                />
+                <div className="rounded-xl aspect-square bg-primary/50 relative overflow-hidden">
+                  <Image
+                    src={
+                      "/loc/furniture-movers-abu-dhabi-packing-service-hamad-movers.jpg"
+                    }
+                    alt="Professional furniture movers in Abu Dhabi packing a sofa for a villa relocation service by Hamad Movers"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                <div className="rounded-xl aspect-3/4 bg-primary/50 relative overflow-hidden">
+                  <Image
+                    src={
+                      "/gallery/hamad-movers-long-distance-moving-uae-highway.jpg"
+                    }
+                    alt="Hamad Movers long distance moving service in the UAE – a moving truck driving on a highway with desert landscape in the background"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
               <div className="space-y-4 pt-8">
-                <img
-                  src="https://images.unsplash.com/photo-1622063000923-a602c89286d9?auto=format&fit=crop&q=80&w=600"
-                  alt="Office Move"
-                  className="rounded-xl aspect-3/4 object-cover shadow-sm"
-                />
-                <img
-                  src="https://images.unsplash.com/photo-1520038410233-7141be7e6f97?auto=format&fit=crop&q=80&w=600"
-                  alt="Storage"
-                  className="rounded-xl aspect-square object-cover shadow-sm"
-                />
+                <div className="rounded-xl aspect-3/4 bg-primary/50 relative overflow-hidden">
+                  <Image
+                    src={"/gallery/hamad-movers-home-villa-moving-dubai.jpg"}
+                    alt="Hamad Movers home and villa moving service in Dubai – a moving truck parked outside a modern villa with movers carrying boxes"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="rounded-xl aspect-square bg-primary/50 relative overflow-hidden">
+                  <Image
+                    src={
+                      "/loc/villa-movers-rak-furniture-packing-hamad-movers.jpg"
+                    }
+                    alt="Villa movers in Ras Al Khaimah packing furniture for a relocation service by Hamad Movers"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </div>
 
@@ -251,27 +280,21 @@ const AboutUsPage = () => {
       <section className="py-24 max-w-6xl mx-auto md:px-4 text-center">
         <div className="bg-primary/5 border border-primary/20 md:rounded-3xl py-12 px-6 lg:p-20 relative overflow-hidden">
           <div className="relative z-10 space-y-8">
-            <h2 className=" text-4xl md:text-5xl text-foreground">
+            <h2 className=" text-3xl md:text-4xl text-foreground">
               Ready for a Stress-Free Move?
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto">
               Have questions about your move or ready to book? Call us or send a
               WhatsApp message. Our team is standing by to help you plan your
               next journey.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Button
-                size="lg"
-                className="rounded-full px-10 h-14 text-lg shadow-xl shadow-primary/20"
-              >
-                Contact Us <ArrowRight className="ml-2 w-5 h-5" />
+              <Button size="lg">
+                Contact Us <ArrowRight />
               </Button>
-              <a
-                href="tel:+971551165993"
-                className="text-foreground font-bold text-2xl hover:text-primary transition-colors flex items-center gap-2"
-              >
-                <Phone className="w-6 h-6" /> +971 55 116 5993
-              </a>
+              <Button variant={"ghost"} size="lg">
+                <Phone /> +971 55 116 5993
+              </Button>
             </div>
           </div>
         </div>
