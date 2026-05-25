@@ -90,7 +90,10 @@ const Navbar = () => {
             >
               About Us
             </a>
-            <a href="#" className="text-sm text-zinc-500 hover:text-zinc-800">
+            <a
+              href="/contact-us"
+              className="text-sm text-zinc-500 hover:text-zinc-800"
+            >
               Contact Us
             </a>
           </div>

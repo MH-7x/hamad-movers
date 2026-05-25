@@ -13,20 +13,19 @@ export const servicesList = [
 
 export const locationList = [
   { title: "Movers in Dubai", href: "/" },
-  { title: "Movers in Sharjah", href: "/" },
-  { title: "Movers in Ajman", href: "/" },
-  { title: "Movers in Abu Dhabi", href: "/" },
-  { title: "Movers in Al Ain", href: "/" },
-  { title: "Movers in Ras Al Khaimah", href: "/" },
+  { title: "Movers in Sharjah", href: "/movers-in-sharjah" },
+  { title: "Movers in Ajman", href: "/movers-in-ajman" },
+  { title: "Movers in Abu Dhabi", href: "/movers-in-abu-dhabi" },
+  { title: "Movers in Al Ain", href: "/movers-in-al-ain" },
+  { title: "Movers in Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
 ];
 
 export const otherPagesList = [
   { title: "Home Page", href: "/" },
-  { title: "About Us", href: "/" },
-  { title: "Contact Us", href: "/" },
-  { title: "Sitemap", href: "/" },
+  { title: "About Us", href: "/about-us" },
+  { title: "Contact Us", href: "/contact-us" },
+  { title: "Sitemap", href: "/sitemap.xml" },
   { title: "Movers in UAE", href: "/" },
-  { title: "Web Developer", href: "/" },
 ];
 
 export default function Footer() {
@@ -117,6 +116,14 @@ export default function Footer() {
                     </a>
                   </li>
                 ))}
+                <li>
+                  <a
+                    href={"https://mashalhuraira.vercel.app"}
+                    className="text-zinc-400 hover:text-white transition-colors text-sm"
+                  >
+                    Web Developer Info
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -133,7 +140,7 @@ export default function Footer() {
                   <h4 className="text-white font-medium text-[15px] mb-1.5">
                     Phone No:
                   </h4>
-                  <p className="text-zinc-400 text-sm">+1 (555) 123-4567</p>
+                  <p className="text-zinc-400 text-sm">+971 551165993</p>
                 </div>
               </div>
 
@@ -150,7 +157,7 @@ export default function Footer() {
                     href="mailto:hello@arcflow.com"
                     className="text-zinc-400 hover:text-white transition-colors text-sm"
                   >
-                    hello@arcflow.com
+                    hamadmovers.com@gmail.com
                   </a>
                 </div>
               </div>
@@ -165,7 +172,7 @@ export default function Footer() {
                     Location:
                   </h4>
                   <p className="text-zinc-400 text-sm leading-relaxed">
-                    123 Innovation Drive, San CA 94105, USA
+                    54 27B Street, Mirdif Dubai
                   </p>
                 </div>
               </div>
@@ -179,10 +186,16 @@ export default function Footer() {
               reserved.
             </p>
             <div className="flex items-center gap-6">
-              <a href="#" className="hover:text-zinc-300 transition-colors">
+              <a
+                href="/privacy-policy"
+                className="hover:text-zinc-300 transition-colors"
+              >
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-zinc-300 transition-colors">
+              <a
+                href="/terms-and-conditions"
+                className="hover:text-zinc-300 transition-colors"
+              >
                 Terms of Service
               </a>
             </div>
