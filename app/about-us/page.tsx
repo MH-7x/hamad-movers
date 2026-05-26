@@ -23,7 +23,7 @@ export const metadata = MetadataTemplate({
     path: "/hamad-movers-and-packers-in-dubai.jpg",
     alt: "Hamad Movers and Packers in Dubai",
   },
-  path: "",
+  path: "/about-us",
 });
 
 const AboutUsPage = () => {
