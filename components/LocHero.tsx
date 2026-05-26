@@ -15,7 +15,7 @@ const LocHero = ({
   };
 }) => {
   return (
-    <section className="h-screen w-full relative  md:-mt-3  flex items-center justify-center">
+    <section className="md:h-screen h-auto md:py-0 py-20 w-full relative  md:-mt-3  flex items-center justify-center">
       {/* Soft Yellow Glow */}
       <div
         className="absolute inset-0 z-0"
