@@ -169,7 +169,7 @@ const PackingAndMovingPage = () => {
                 <img
                   src="/nice-movers-packing-services-dubai.jpg"
                   alt="Packing Materials"
-                  className="rounded-[2rem] shadow-xl"
+                  className="rounded-4xl shadow-xl"
                 />
               </div>
               <div className="order-1 md:order-2">
@@ -261,48 +261,85 @@ const PackingAndMovingPage = () => {
         <div className="-mt-20"></div>
         <MovingGallery />
         {/* UAE-WIDE PACKING AND MOVING */}
+        <section className="py-20 bg-muted/50">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="font-hero text-3xl md:text-4xl mb-4">
+                Packing and Moving Services{" "}
+                <span className="text-primary">Across UAE</span>
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Professional packing and moving throughout all UAE emirates with
+                full materials and support.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { location: "Abu Dhabi", path: "/movers-in-abu-dhabi" },
+                { location: "Sharjah", path: "/movers-in-sharjah" },
+                { location: "Ajman", path: "/movers-in-ajman" },
+                { location: "Al Ain", path: "/movers-in-al-ain" },
+                {
+                  location: "Ras Al Khaimah",
+                  path: "/movers-in-ras-al-khaimah",
+                },
+              ].map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.path}
+                  className="group p-6 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
+                >
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                      {item.location}
+                    </h3>
+                    <div className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                      →
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Full packing and moving services available
+                  </p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* RELATED SERVICES */}
         <section className="py-20">
           <div className="max-w-6xl mx-auto px-4">
-            <div className="bg-card border border-border rounded-3xl p-8 md:p-12 text-center lg:text-left">
-              <div className="flex flex-col lg:flex-row gap-12 items-center">
-                <div className="flex-1">
-                  <h2 className="font-hero text-3xl md:text-4xl mb-6 text-foreground">
-                    UAE-Wide Packing and Moving
-                  </h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    We pack and move homes and offices across Dubai and all UAE
-                    emirates, including Abu Dhabi, Sharjah, Ajman, Ras Al
-                    Khaimah, and Al Ain. If you&apos;re relocating between
-                    cities, we can do the full packing, loading, transport, and
-                    unloading in one job.
-                  </p>
-                  <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                    {[
-                      "Abu Dhabi",
-                      "Sharjah",
-                      "Ajman",
-                      "Ras Al Khaimah",
-                      "Al Ain",
-                      "Fujairah",
-                      "Umm Al Quwain",
-                    ].map((emirate) => (
-                      <span
-                        key={emirate}
-                        className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-bold border border-primary/20"
-                      >
-                        {emirate}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <img
-                    src="/hamad-movers-and-packers-truck.jpg"
-                    alt="UAE Moving"
-                    className="rounded-3xl shadow-lg"
-                  />
-                </div>
-              </div>
+            <div className="text-center mb-16">
+              <h2 className="font-hero text-3xl md:text-4xl mb-4">
+                Other Moving Services We{" "}
+                <span className="text-primary">Offer</span>
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                We provide a complete range of relocation and moving services.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { service: "House Moving", path: "/house-movers-in-dubai" },
+                { service: "Villa Moving", path: "/villa-movers-dubai" },
+                { service: "Office Moving", path: "/office-movers-dubai" },
+                {
+                  service: "Furniture Moving",
+                  path: "/furniture-movers-dubai",
+                },
+              ].map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.path}
+                  className="p-5 bg-linear-to-br from-primary/5 to-transparent rounded-xl border border-primary/20 hover:border-primary hover:bg-primary/10 transition-all text-center"
+                >
+                  <h3 className="font-semibold text-foreground hover:text-primary transition-colors">
+                    {item.service}
+                  </h3>
+                </a>
+              ))}
             </div>
           </div>
         </section>

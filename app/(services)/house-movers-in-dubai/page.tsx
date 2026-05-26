@@ -227,6 +227,94 @@ const HouseMoversPage = () => {
           </div>
         </section>
 
+        {/* HOUSE MOVERS IN OTHER EMIRATES */}
+        <section className="py-20 bg-muted/50">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="font-hero text-3xl md:text-4xl mb-4">
+                House Movers Across the{" "}
+                <span className="text-primary">UAE</span>
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Moving to another emirate? We provide professional house moving
+                services throughout the UAE.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { location: "Abu Dhabi", path: "/movers-in-abu-dhabi" },
+                { location: "Sharjah", path: "/movers-in-sharjah" },
+                { location: "Ajman", path: "/movers-in-ajman" },
+                { location: "Al Ain", path: "/movers-in-al-ain" },
+                {
+                  location: "Ras Al Khaimah",
+                  path: "/movers-in-ras-al-khaimah",
+                },
+              ].map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.path}
+                  className="group p-6 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
+                >
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                      {item.location}
+                    </h3>
+                    <div className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                      →
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Professional home moving services available
+                  </p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* RELATED SERVICES */}
+        <section className="py-20">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="font-hero text-3xl md:text-4xl mb-4">
+                Other Moving Services We{" "}
+                <span className="text-primary">Offer</span>
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Beyond residential moves, we specialize in various types of
+                relocations.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { service: "Villa Moving", path: "/villa-movers-dubai" },
+                { service: "Office Moving", path: "/office-movers-dubai" },
+                {
+                  service: "Furniture Moving",
+                  path: "/furniture-movers-dubai",
+                },
+                {
+                  service: "Packing Services",
+                  path: "/packing-and-moving-services",
+                },
+              ].map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.path}
+                  className="p-5 bg-linear-to-br from-primary/5 to-transparent rounded-xl border border-primary/20 hover:border-primary hover:bg-primary/10 transition-all text-center"
+                >
+                  <h3 className="font-semibold text-foreground hover:text-primary transition-colors">
+                    {item.service}
+                  </h3>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* QUOTE FORM INTEGRATION */}
 
         {/* FAQ SECTION */}

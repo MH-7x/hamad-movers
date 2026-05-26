@@ -251,52 +251,85 @@ const CheapMoversPage = () => {
         <MovingGallery />
         <div className="-mt-20"></div>
         {/* AFFORDABLE MOVING ACROSS UAE */}
-        <section className="py-20 mt-16">
+        <section className="py-20 bg-muted/50">
           <div className="max-w-6xl mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <h2 className="font-hero text-3xl mb-8 flex items-center gap-3">
-                  <div className="h-10 w-2 bg-primary rounded-full"></div>
-                  Affordable Moving Across UAE
-                </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  Our budget-friendly rates apply across Dubai and the other
-                  emirates. Whether you need cheap movers in Abu Dhabi,
-                  affordable moving from Dubai to Sharjah, or a cost-effective
-                  local move within Ajman, we offer honest pricing across the
-                  board.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Abu Dhabi",
-                    "Sharjah",
-                    "Ajman",
-                    "Ras Al Khaimah",
-                    "Al Ain",
-                    "Fujairah",
-                    "Umm Al Quwain",
-                  ].map((area, i) => (
-                    <span
-                      key={i}
-                      className="px-4 py-2 bg-muted text-muted-foreground rounded-lg text-sm font-semibold hover:bg-primary hover:text-white transition-colors cursor-default"
-                    >
-                      {area}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div className="relative aspect-video w-full ">
-                <Image
-                  src="/hamad-movers-and-packers-truck.jpg"
-                  alt="Hamad Movers Truck"
-                  fill
-                  className="object-cover  rounded-3xlz"
-                />
-                <div className="absolute -bottom-6 -right-6 bg-primary   p-6 rounded-2xl shadow-xl hidden md:block">
-                  <p className="text-2xl font-bold text-white!">100%</p>
-                  <p className="text-sm text-white!">Transparent Pricing</p>
-                </div>
-              </div>
+            <div className="text-center mb-16">
+              <h2 className="font-hero text-3xl md:text-4xl mb-4">
+                Affordable Moving{" "}
+                <span className="text-primary">Across UAE</span>
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Honest rates without hidden charges throughout all UAE emirates.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { location: "Abu Dhabi", path: "/movers-in-abu-dhabi" },
+                { location: "Sharjah", path: "/movers-in-sharjah" },
+                { location: "Ajman", path: "/movers-in-ajman" },
+                { location: "Al Ain", path: "/movers-in-al-ain" },
+                {
+                  location: "Ras Al Khaimah",
+                  path: "/movers-in-ras-al-khaimah",
+                },
+              ].map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.path}
+                  className="group p-6 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
+                >
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                      {item.location}
+                    </h3>
+                    <div className="text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                      →
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Transparent pricing available
+                  </p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* OTHER MOVING SERVICES */}
+        <section className="py-20">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="font-hero text-3xl md:text-4xl mb-4">
+                All Types of Moving{" "}
+                <span className="text-primary">Services</span>
+              </h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                From house to office to furniture moves, all at competitive
+                rates.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { service: "House Moving", path: "/house-movers-in-dubai" },
+                { service: "Villa Moving", path: "/villa-movers-dubai" },
+                { service: "Office Moving", path: "/office-movers-dubai" },
+                {
+                  service: "Furniture Moving",
+                  path: "/furniture-movers-dubai",
+                },
+              ].map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.path}
+                  className="p-5 bg-linear-to-br from-primary/5 to-transparent rounded-xl border border-primary/20 hover:border-primary hover:bg-primary/10 transition-all text-center"
+                >
+                  <h3 className="font-semibold text-foreground hover:text-primary transition-colors">
+                    {item.service}
+                  </h3>
+                </a>
+              ))}
             </div>
           </div>
         </section>

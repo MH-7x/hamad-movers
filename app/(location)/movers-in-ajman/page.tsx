@@ -156,6 +156,91 @@ const AjmanPage = () => {
         isReversed={true}
         contactButtonText="Get A Instant Quote"
       />
+
+      {/* MOVING SERVICES IN OTHER EMIRATES */}
+      <section className="py-20 bg-muted/50">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Moving Services in{" "}
+              <span className="text-primary">Other Emirates</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              We provide professional moving services throughout all UAE
+              emirates.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { location: "Movers in Dubai", path: "/" },
+              { location: "Movers in Abu Dhabi", path: "/movers-in-abu-dhabi" },
+              { location: "Movers in Sharjah", path: "/movers-in-sharjah" },
+              { location: "Movers in Al Ain", path: "/movers-in-al-ain" },
+              {
+                location: "Movers in Ras Al Khaimah",
+                path: "/movers-in-ras-al-khaimah",
+              },
+            ].map((item, idx) => (
+              <a
+                key={idx}
+                href={item.path}
+                className="group p-6 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all text-center"
+              >
+                <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
+                  {item.location}
+                </h3>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Professional services
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* LEARN MORE ABOUT HAMAD MOVERS */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a
+              href="/about-us"
+              className="group p-8 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
+            >
+              <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors mb-2">
+                About Hamad Movers
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Learn more about our company, experience, and commitment to
+                quality service.
+              </p>
+            </a>
+            <a
+              href="/contact-us"
+              className="group p-8 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
+            >
+              <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors mb-2">
+                Contact Us
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Get in touch for a free quote or to discuss your moving needs.
+              </p>
+            </a>
+            <a
+              href="/packing-and-moving-services"
+              className="group p-8 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
+            >
+              <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors mb-2">
+                Packing Services
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Full packing service available for your Ajman move.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <FAQSection title="FAQ — Movers in Ajman" faqs={moversAjmanFAQs} />
       <CTASection
         first="Book Your "

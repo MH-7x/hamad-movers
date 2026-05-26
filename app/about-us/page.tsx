@@ -210,7 +210,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* --- COVERAGE SECTION --- */}
-      <section className="py-20 bg-foreground text-background md:rounded-[2rem] md:mx-4 md:mb-20 overflow-hidden relative">
+      <section className="py-20 bg-foreground text-background md:rounded-4xl md:mx-4 md:mb-20 overflow-hidden relative">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2" />
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary rounded-full blur-[120px] translate-x-1/2 translate-y-1/2" />
@@ -227,20 +227,21 @@ const AboutUsPage = () => {
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {[
-                  "Dubai",
-                  "Abu Dhabi",
-                  "Sharjah",
-                  "Ajman",
-                  "Ras Al Khaimah",
-                  "Al Ain",
+                  { name: "Dubai", path: "/" },
+                  { name: "Abu Dhabi", path: "/movers-in-abu-dhabi" },
+                  { name: "Sharjah", path: "/movers-in-sharjah" },
+                  { name: "Ajman", path: "/movers-in-ajman" },
+                  { name: "Ras Al Khaimah", path: "/movers-in-ras-al-khaimah" },
+                  { name: "Al Ain", path: "/movers-in-al-ain" },
                 ].map((city) => (
-                  <div
-                    key={city}
-                    className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg border border-white/10"
+                  <a
+                    key={city.name}
+                    href={city.path}
+                    className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg border border-white/10 hover:bg-primary hover:border-primary transition-all"
                   >
                     <MapPin className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium">{city}</span>
-                  </div>
+                    <span className="text-sm font-medium">{city.name}</span>
+                  </a>
                 ))}
               </div>
             </div>
@@ -272,6 +273,47 @@ const AboutUsPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- OUR SERVICES (WITH LINKS) --- */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className=" text-3xl md:text-4xl text-foreground">
+              Explore Our Services
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Click on any service to learn more and get a detailed quote.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { name: "House Moving", path: "/house-movers-in-dubai" },
+              { name: "Villa Moving", path: "/villa-movers-dubai" },
+              { name: "Office Moving", path: "/office-movers-dubai" },
+              { name: "Furniture Moving", path: "/furniture-movers-dubai" },
+              {
+                name: "Packing Services",
+                path: "/packing-and-moving-services",
+              },
+              { name: "Affordable Moving", path: "/cheap-movers-dubai" },
+            ].map((service) => (
+              <a
+                key={service.name}
+                href={service.path}
+                className="group p-6 rounded-2xl border border-border bg-card hover:bg-primary/5 hover:border-primary transition-all"
+              >
+                <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                  {service.name}
+                </h3>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Professional service across all emirates
+                </p>
+              </a>
+            ))}
           </div>
         </div>
       </section>
