@@ -2,7 +2,7 @@ import { APP } from "@/lib/App";
 import { MetadataRoute } from "next";
 const pages: MetadataRoute.Sitemap = [
   {
-    url: "/",
+    url: "",
     changeFrequency: "weekly",
     priority: 1.0,
     images: ["/hamad-movers-and-packers-in-dubai.jpg"],
@@ -117,7 +117,7 @@ const pages: MetadataRoute.Sitemap = [
 export default function sitemap(): MetadataRoute.Sitemap {
   return pages.map((page) => ({
     ...page,
-    url: `${APP.url}${page.url}/`,
+    url: `${APP.url}${page.url}`,
     images: page.images ? page.images.map((img) => `${APP.url}${img}`) : [],
     lastModified: page.lastModified,
   }));
