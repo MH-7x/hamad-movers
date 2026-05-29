@@ -55,7 +55,12 @@ export const AreasCovered: React.FC<AreasCoveredProps> = ({
               If you&apos;re in an area not listed, call us — we most likely
               cover it.
             </h3>
-            <Button variant={"outline"} size={"lg"} className="mt-5 md:w-60">
+            <Button
+              callBtn
+              variant={"outline"}
+              size={"lg"}
+              className="mt-5 md:w-60"
+            >
               <PhoneCall /> Call Now
             </Button>
           </div>
@@ -112,7 +117,12 @@ export const ServiceSection: React.FC<ServiceSectionProps> = ({
                 </p>
               ))}
             </div>
-            <Button variant={"outline"} size={"lg"} className="mt-5 bg-muted">
+            <Button
+              quoteBtn
+              variant={"outline"}
+              size={"lg"}
+              className="mt-5 bg-muted"
+            >
               <MessageCircle className="mr-2 h-5 w-5" />{" "}
               {contactButtonText || "Contact Us"}
             </Button>

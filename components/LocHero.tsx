@@ -98,10 +98,15 @@ const LocHero = ({
           {desc}
         </p>
         <div className="flex items-center gap-3 md:flex-row flex-col mt-5 justify-center">
-          <Button size={"lg"} className="md:w-max w-full">
+          <Button callBtn size={"lg"} className="md:w-max w-full">
             <PhoneCall /> Call (055 1165993)
           </Button>
-          <Button size={"lg"} className="md:w-max w-full" variant={"secondary"}>
+          <Button
+            whatsappBtn
+            size={"lg"}
+            className="md:w-max w-full"
+            variant={"secondary"}
+          >
             <MessageSquareCheck /> WhatsApp Us
           </Button>
         </div>

@@ -35,10 +35,10 @@ export default function Home() {
             </p>
 
             <div className="flex justify-center gap-x-4">
-              <Button size={"lg"}>
+              <Button callBtn size={"lg"}>
                 <PhoneCall /> Call Now
               </Button>
-              <Button variant={"secondary"} size={"lg"}>
+              <Button whatsappBtn variant={"secondary"} size={"lg"}>
                 <MessageCircle /> Quote On WhatsApp
               </Button>
             </div>
@@ -133,7 +133,30 @@ function CoverageSection() {
 
             <div className="flex flex-col sm:flex-row gap-8">
               <ul className="flex-1 space-y-4">
-                {emiratesLocations.map((location, index) => (
+                <li className="flex items-center gap-4">
+                  <span className="shrink-0 w-6 h-6 bg-foreground  flex items-center justify-center rounded-full">
+                    <svg
+                      className="w-4 h-4 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="3"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  <a
+                    href={"/"}
+                    className="text-[#2b2b2b] font-semibold hover:text-primary transition-colors text-[15px]"
+                  >
+                    Movers in Dubai
+                  </a>
+                </li>
+                {locationList.map((location, index) => (
                   <li key={index} className="flex items-center gap-4">
                     <span className="shrink-0 w-6 h-6 bg-foreground  flex items-center justify-center rounded-full">
                       <svg
@@ -151,10 +174,10 @@ function CoverageSection() {
                       </svg>
                     </span>
                     <a
-                      href={`#${location.toLowerCase().replace(/ /g, "-")}`}
-                      className="text-[#2b2b2b] font-semibold hover:text-[#d4ad1e] transition-colors text-[15px]"
+                      href={location.href}
+                      className="text-[#2b2b2b] font-semibold hover:text-primary transition-colors text-[15px]"
                     >
-                      {location}
+                      {location.title}
                     </a>
                   </li>
                 ))}
@@ -294,7 +317,7 @@ function Features() {
 import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTA";
 import { FAQSection } from "@/components/FaqsSection";
-import { HomePageFaqs } from "@/lib/data";
+import { HomePageFaqs, locationList } from "@/lib/data";
 import MovingProcess from "@/components/MovingProcess";
 import FeatureStats from "@/components/FeatureStates";
 import { MovingGallery } from "@/components/Gallery";

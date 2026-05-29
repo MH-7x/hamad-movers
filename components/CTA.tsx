@@ -47,10 +47,10 @@ export default function CTASection({
 
             {}
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Button size={"lg"}>
+              <Button callBtn size={"lg"}>
                 <PhoneCall /> Call (055 1165993)
               </Button>
-              <Button size={"lg"} variant={"secondary"}>
+              <Button quoteBtn size={"lg"} variant={"secondary"}>
                 Fill out the form <ArrowRight />
               </Button>
             </div>

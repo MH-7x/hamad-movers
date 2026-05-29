@@ -3,9 +3,10 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { Slot } from "radix-ui";
 
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const buttonVariants = cva(
-  "group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  "group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 cursor-pointer",
   {
     variants: {
       variant: {
@@ -47,12 +48,74 @@ function Button({
   variant = "default",
   size = "default",
   asChild = false,
+  quoteBtn = false,
+  callBtn = false,
+  whatsappBtn = false,
+  link = "",
+  children,
+
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
+    quoteBtn?: boolean;
+    callBtn?: boolean;
+    whatsappBtn?: boolean;
+    link?: string;
   }) {
   const Comp = asChild ? Slot.Root : "button";
+
+  // Shared inner button element — identical to original, no extra wrappers
+  const inner = (
+    <Comp
+      data-slot="button"
+      data-variant={variant}
+      data-size={size}
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
+    >
+      {children}
+    </Comp>
+  );
+
+  if (quoteBtn) {
+    return (
+      <Link href="/contact-us" aria-label="Get A Moving Quote">
+        {inner}
+      </Link>
+    );
+  }
+
+  if (link) {
+    return <Link href={link}>{inner}</Link>;
+  }
+
+  if (whatsappBtn) {
+    const whatsappHref =
+      "https://wa.me/+971551165993?text=I%20Come%20From%20Your%20Website%20and%20I%20Need%20Moving%20Services";
+    return (
+      <Link
+        href={whatsappHref}
+        aria-label="Get A Quote On WhatsApp"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        {inner}
+      </Link>
+    );
+  }
+
+  if (callBtn) {
+    return (
+      <Link
+        href="tel:+971551165993"
+        aria-label="Call To Movers"
+        target="_blank"
+      >
+        {inner}
+      </Link>
+    );
+  }
 
   return (
     <Comp
@@ -61,7 +124,9 @@ function Button({
       data-size={size}
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
-    />
+    >
+      {children}
+    </Comp>
   );
 }
 

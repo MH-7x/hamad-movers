@@ -44,10 +44,11 @@ const AboutUsPage = () => {
                 across all UAE emirates.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
-                <Button size="lg" className="rounded-full px-8">
+                <Button quoteBtn size="lg" className="rounded-full px-8">
                   Contact Us
                 </Button>
                 <Button
+                  whatsappBtn
                   variant="outline"
                   size="lg"
                   className="rounded-full px-8"
@@ -331,10 +332,10 @@ const AboutUsPage = () => {
               next journey.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <Button size="lg">
+              <Button quoteBtn size="lg">
                 Contact Us <ArrowRight />
               </Button>
-              <Button variant={"ghost"} size="lg">
+              <Button callBtn variant={"ghost"} size="lg">
                 <Phone /> +971 55 116 5993
               </Button>
             </div>

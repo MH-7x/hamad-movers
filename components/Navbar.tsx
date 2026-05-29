@@ -109,16 +109,20 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Call Button - Hidden on smaller screens, shown on lg */}
-        <button className="hidden lg:flex shrink-0 items-center gap-2.5 bg-linear-90 from-primary to-[#ff8800] text-white font-medium pl-5 pr-2 py-2 rounded-full cursor-pointer border-0 text-sm hover:opacity-90 transition-opacity">
+        <Button
+          callBtn
+          className="hidden lg:flex shrink-0 items-center gap-2.5 bg-linear-90 from-primary to-[#ff8800] text-white font-medium pl-5 pr-2 py-5 rounded-full cursor-pointer border-0 text-sm hover:opacity-90 transition-opacity"
+        >
           CALL (055 1165993)
           <span className="size-7 rounded-full bg-white flex items-center justify-center">
             <Phone width={15} height={15} className="text-primary" />
           </span>
-        </button>
+        </Button>
 
         {/* Mobile / Tablet Controls */}
         <div className="lg:hidden flex items-center gap-3 sm:gap-4">
           <Button
+            whatsappBtn
             size={"sm"}
             variant={"outline"}
             className="bg-muted border-none text-xs sm:text-sm"
@@ -242,12 +246,15 @@ const Navbar = () => {
               Contact Us
             </Link>
 
-            <button className="flex w-full items-center justify-between mt-5 gap-2.5 bg-linear-90 from-primary to-[#ff8800] text-white font-medium pl-5 pr-2 py-2 rounded-full cursor-pointer border-0 hover:opacity-90 transition-opacity text-sm sm:text-base">
+            <Button
+              className="flex w-full items-center justify-between mt-5 gap-2.5 bg-linear-90 from-primary to-[#ff8800] text-white font-medium pl-5 pr-2 py-5 rounded-full cursor-pointer border-0 hover:opacity-90 transition-opacity text-sm sm:text-base"
+              callBtn
+            >
               CALL (055 1165993)
               <span className="size-8 rounded-full bg-white flex items-center justify-center shrink-0">
                 <Phone width={16} height={16} className="text-primary" />
               </span>
-            </button>
+            </Button>
           </div>
         </div>
       </nav>

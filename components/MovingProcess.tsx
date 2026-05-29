@@ -59,6 +59,7 @@ const MovingProcess = ({ className, cusProcess }: Process1Props) => {
             </p>
 
             <Button
+              callBtn
               variant="ghost"
               className="flex items-center justify-start gap-2"
             >

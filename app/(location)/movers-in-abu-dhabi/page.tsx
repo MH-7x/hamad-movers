@@ -86,45 +86,50 @@ const page = () => {
             description:
               "We move studios, apartments, and family homes across Abu Dhabi. Full packing service available.",
             linkText: "Contact For House Moving",
-            icon: Icons.House,
+            icon: <Icons.House />,
             name: "/house-movers-dubai-hamad-movers.jpg",
             alt: "Professional house movers in Dubai carrying boxes during a home shifting service by Hamad Movers",
+            link: "/furniture-movers-dubai",
           },
           {
             title: "Villa Moving in Abu Dhabi",
             description:
               "Large villa relocations in Abu Dhabi, covering all areas including Khalidiyah, Al Reem Island, Al Reef, Khalifa City, Mohammed Bin Zayed City, and surrounding communities.",
             linkText: "Contact For Villa Moving",
-            icon: Icons.Villa,
+            icon: <Icons.Villa />,
             name: "/villa-movers-dubai-hamad-movers.jpg",
             alt: "Hamad Movers crew shifting furniture during a villa moving service in Dubai",
+            link: "/villa-movers-dubai",
           },
           {
             title: "Office Moving in Abu Dhabi",
             description:
               "Commercial relocations within Abu Dhabi or from Dubai to Abu Dhabi. We work around your schedule to minimize downtime.",
             linkText: "Contact For Office Moving",
-            icon: Icons.Office,
+            icon: <Icons.Office />,
             name: "/office-movers-dubai-hamad-movers.jpg",
             alt: "Hamad Movers team handling office relocation in Dubai with professional packing and transport",
+            link: "/office-movers-dubai",
           },
           {
             title: "Furniture Moving in Abu Dhabi",
             description:
               "If you need furniture-only transport within Abu Dhabi or from another emirate, we handle single items to full room sets.",
             linkText: "Contact For Furniture Moving",
-            icon: Icons.Furniture,
+            icon: <Icons.Furniture />,
             name: "/furniture-movers-dubai-hamad-movers.jpg",
             alt: "Hamad Movers professional disassembling and wrapping furniture for moving service in Dubai",
+            link: "/furniture-movers-dubai",
           },
           {
             title: "Packing and Moving Services",
             description:
               "Don't want to pack anything yourself? We bring the boxes, bubble wrap, and stretch film — and do it all for you.",
             linkText: "Contact For Packing Services",
-            icon: Icons.Packing,
+            icon: <Icons.Packing />,
             name: "/packing-moving-services-dubai-hamad-movers.jpg",
             alt: "Hamad Movers packing team wrapping and boxing household items for a full packing service in Dubai",
+            link: "/packing-and-moving-services",
           },
         ]}
       />
@@ -238,14 +243,15 @@ const page = () => {
               </p>
             </a>
             <a
-              href="/packing-and-moving-services"
+              href="/house-movers-in-dubai"
               className="group p-8 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
             >
               <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors mb-2">
-                Packing Services
+                House Moving & Packing
               </h3>
               <p className="text-sm text-muted-foreground">
-                Full packing service available for your Abu Dhabi move.
+                Full moving and packing service available for your Abu Dhabi
+                move.
               </p>
             </a>
           </div>

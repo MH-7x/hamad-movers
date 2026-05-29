@@ -84,7 +84,7 @@ const MoversInAlAin = () => {
             description:
               "Full home shifting service in Al Ain — from studio apartments to large family homes.",
             linkText: "Contact For House Moving",
-            icon: Icons.House,
+            icon: <Icons.House />,
             name: "/house-movers-dubai-hamad-movers.jpg",
             alt: "Professional house movers in Dubai carrying boxes during a home shifting service by Hamad Movers",
           },
@@ -93,7 +93,7 @@ const MoversInAlAin = () => {
             description:
               "Al Ain has many large villas and compounds. We handle full villa relocations including all furniture, packing, and setup.",
             linkText: "Contact For Villa Moving",
-            icon: Icons.Villa,
+            icon: <Icons.Villa />,
             name: "/villa-movers-dubai-hamad-movers.jpg",
             alt: "Hamad Movers crew shifting furniture during a villa moving service in Dubai",
           },
@@ -102,7 +102,7 @@ const MoversInAlAin = () => {
             description:
               "We relocate offices within Al Ain or between Al Ain and Dubai/Abu Dhabi.",
             linkText: "Contact For Office Moving",
-            icon: Icons.Office,
+            icon: <Icons.Office />,
             name: "/office-movers-dubai-hamad-movers.jpg",
             alt: "Hamad Movers team handling office relocation in Dubai with professional packing and transport",
           },
@@ -111,7 +111,7 @@ const MoversInAlAin = () => {
             description:
               "Moving individual pieces or full sets within Al Ain or to another emirate.",
             linkText: "Contact For Furniture Moving",
-            icon: Icons.Furniture,
+            icon: <Icons.Furniture />,
             name: "/furniture-movers-dubai-hamad-movers.jpg",
             alt: "Hamad Movers professional disassembling and wrapping furniture for moving service in Dubai",
           },
@@ -120,9 +120,10 @@ const MoversInAlAin = () => {
             description:
               "We do this route regularly. Whether you're heading to Dubai or Abu Dhabi, we plan the move to make it as smooth as possible.",
             linkText: "Contact For Inter-emirate Moving",
-            icon: Icons.Packing,
+            icon: <Icons.Packing />,
             name: "/packing-moving-services-dubai-hamad-movers.jpg",
             alt: "Hamad Movers packing team wrapping and boxing household items for a full packing service in Dubai",
+            link: "/contact-us",
           },
         ]}
       />
@@ -239,14 +240,14 @@ const MoversInAlAin = () => {
               </p>
             </a>
             <a
-              href="/packing-and-moving-services"
+              href="/house-movers-in-dubai"
               className="group p-8 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
             >
               <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors mb-2">
-                Packing Services
+                House Moving & Packing
               </h3>
               <p className="text-sm text-muted-foreground">
-                Full packing service available for your Al Ain move.
+                Full moving and packing service available for your Al Ain move.
               </p>
             </a>
           </div>

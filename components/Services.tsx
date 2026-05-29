@@ -1,5 +1,7 @@
+import { servicesList } from "@/lib/data";
 import Image from "next/image";
-import { ReactNode } from "react";
+import Link from "next/link";
+import { JSX, ReactNode } from "react";
 
 // Reusable SVG icons designed to match the outline style in the reference image
 export const Icons = {
@@ -96,7 +98,17 @@ export const Icons = {
   ),
 };
 
-const servicesData = [
+type Service = {
+  title: string;
+  description: string;
+  linkText: string;
+  icon: JSX.Element | (() => JSX.Element);
+  name: string;
+  alt: string;
+  link?: string;
+};
+
+const servicesData: Service[] = [
   {
     title: "House Movers in Dubai",
     description:
@@ -157,7 +169,15 @@ export default function Services({
   title,
   desc,
 }: {
-  services?: typeof servicesData;
+  services?: {
+    title: string;
+    description: string;
+    linkText: string;
+    icon: JSX.Element;
+    name: string;
+    alt: string;
+    link?: string;
+  }[];
   title?: ReactNode;
   desc?: ReactNode;
 }) {
@@ -199,7 +219,11 @@ export default function Services({
               {/* Card Content Top */}
               <div className="md:p-8 p-6 flex-grow flex flex-col">
                 <div className="mb-5">
-                  <service.icon />
+                  {typeof service.icon === "function" ? (
+                    <service.icon />
+                  ) : (
+                    service.icon
+                  )}
                 </div>
 
                 <h3 className="text-[22px] font-semibold text-[#3b4652] mb-4">
@@ -210,15 +234,15 @@ export default function Services({
                   {service.description}
                 </p>
 
-                <a
-                  href="#"
+                <Link
+                  href={service.link ? service.link : servicesList[index].href}
                   className="inline-flex items-center text-primary font-medium text-sm hover:underline mt-auto group"
                 >
                   {service.linkText}
                   <span className="ml-1 group-hover:translate-x-1 transition-transform">
                     →
                   </span>
-                </a>
+                </Link>
               </div>
 
               {/* Card Image Bottom (White box with 16:9 ratio as requested) */}

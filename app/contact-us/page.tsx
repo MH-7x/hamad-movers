@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, Map, MapPin, MapPinCheck, Phone } from "lucide-react";
 import QuoteForm from "@/components/QuoteForm";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import CTASection from "@/components/CTA";
@@ -57,22 +57,20 @@ export default function ContactUs() {
             {/* WhatsApp Card */}
             <div className="p-6 md:p-8 bg-white border border-zinc-200 rounded-2xl hover:shadow-md transition-shadow duration-300">
               <div className="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-4">
-                <Mail className="w-6 h-6 text-primary" strokeWidth={1.5} />
+                <MapPinCheck
+                  className="w-6 h-6 text-primary"
+                  strokeWidth={1.5}
+                />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                WhatsApp
+                Address
               </h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Quick response with photo support
+                hamad movers office address
               </p>
-              <a
-                href="https://wa.me/971551165993"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary font-semibold hover:underline"
-              >
-                Message on WhatsApp
-              </a>
+              <p className="text-primary font-semibold hover:underline">
+                54 27B Street, Mirdif Dubai
+              </p>
             </div>
 
             {/* Location Card */}

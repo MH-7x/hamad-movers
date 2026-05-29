@@ -82,7 +82,7 @@ const AjmanPage = () => {
             description:
               "We move studios and apartments across Ajman — same area or to a different part of the city.",
             linkText: "Contact For House Moving",
-            icon: Icons.House,
+            icon: <Icons.House />,
             name: "/house-movers-dubai-hamad-movers.jpg",
             alt: "Professional house movers in Dubai carrying boxes during a home shifting service by Hamad Movers",
           },
@@ -91,7 +91,7 @@ const AjmanPage = () => {
             description:
               "Larger villas in Ajman require more time and more hands. We plan accordingly.",
             linkText: "Contact For Villa Moving",
-            icon: Icons.Villa,
+            icon: <Icons.Villa />,
             name: "/villa-movers-dubai-hamad-movers.jpg",
             alt: "Hamad Movers crew shifting furniture during a villa moving service in Dubai",
           },
@@ -100,7 +100,7 @@ const AjmanPage = () => {
             description:
               "Commercial moves within Ajman or between Ajman and neighboring emirates.",
             linkText: "Contact For Office Moving",
-            icon: Icons.Office,
+            icon: <Icons.Office />,
             name: "/office-movers-dubai-hamad-movers.jpg",
             alt: "Hamad Movers team handling office relocation in Dubai with professional packing and transport",
           },
@@ -109,7 +109,7 @@ const AjmanPage = () => {
             description:
               "Individual items or full sets. Disassembly, wrapping, transport, and reassembly — all included.",
             linkText: "Contact For Furniture Moving",
-            icon: Icons.Furniture,
+            icon: <Icons.Furniture />,
             name: "/furniture-movers-dubai-hamad-movers.jpg",
             alt: "Hamad Movers professional disassembling and wrapping furniture for moving service in Dubai",
           },
@@ -118,7 +118,7 @@ const AjmanPage = () => {
             description:
               "Don't want to pack anything yourself? We bring the boxes, bubble wrap, and stretch film — and do it all for you.",
             linkText: "Contact For Packing Services",
-            icon: Icons.Packing,
+            icon: <Icons.Packing />,
             name: "/packing-moving-services-dubai-hamad-movers.jpg",
             alt: "Hamad Movers packing team wrapping and boxing household items for a full packing service in Dubai",
           },
@@ -127,9 +127,10 @@ const AjmanPage = () => {
             description:
               "Inter-emirate moves to and from Ajman. We do these regularly.",
             linkText: "Contact For Sharjah to Dubai Moving",
-            icon: Icons.Cheap,
+            icon: <Icons.Cheap />,
             name: "/hamad-movers-and-packers-truck.jpg",
             alt: "Hamad Movers packing team wrapping and boxing household items for a full packing service in Dubai",
+            link: "/contact-us",
           },
         ]}
       />
@@ -227,14 +228,14 @@ const AjmanPage = () => {
               </p>
             </a>
             <a
-              href="/packing-and-moving-services"
+              href="/house-movers-in-dubai"
               className="group p-8 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
             >
               <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors mb-2">
-                Packing Services
+                House Moving & Packing
               </h3>
               <p className="text-sm text-muted-foreground">
-                Full packing service available for your Ajman move.
+                Full moving and packing service available for your Ajman move.
               </p>
             </a>
           </div>
