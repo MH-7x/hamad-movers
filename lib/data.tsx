@@ -146,7 +146,7 @@ export const HomePageFaqs = [
     ),
   },
   {
-    question: "What items can&apos;t be transported?",
+    question: "What items can't be transported?",
     answer: (
       <>
         <p>
@@ -1054,8 +1054,7 @@ export const FurnitureMovingDubaiFaqs = [
   },
 
   {
-    question:
-      "What if the furniture doesn&apos;t fit through the door or elevator?",
+    question: "What if the furniture doesn't fit through the door or elevator?",
     answer: (
       <>
         <p>
@@ -1275,7 +1274,7 @@ export const PackingServicesDubaiFaqs = [
   },
 
   {
-    question: "What items won&apos;t packers pack?",
+    question: "What items won't packers pack?",
     answer: (
       <>
         <p>
@@ -1419,7 +1418,7 @@ export const PackingServicesDubaiFaqs = [
 
 export const AffordableMoversDubaiFaqs = [
   {
-    question: "What&apos;s the cheapest way to move in Dubai?",
+    question: "What's the cheapest way to move in Dubai?",
     answer: (
       <>
         <p>
@@ -1557,7 +1556,7 @@ export const AffordableMoversDubaiFaqs = [
 
   {
     question:
-      "What&apos;s the difference between affordable movers and cheap movers in Dubai?",
+      "What's the difference between affordable movers and cheap movers in Dubai?",
     answer: (
       <>
         <p>
@@ -1581,7 +1580,7 @@ export const AffordableMoversDubaiFaqs = [
 
   {
     question:
-      "What&apos;s the best time of year to get a lower price on a move in Dubai?",
+      "What's the best time of year to get a lower price on a move in Dubai?",
     answer: (
       <>
         <p>Demand patterns can influence moving availability and pricing.</p>

@@ -58,10 +58,11 @@ const CheapMoversPage = () => {
                   move starts. What we quote is what you pay.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                  <Button size="lg" className="w-full sm:w-auto   ">
+                  <Button callBtn size="lg" className="w-full sm:w-auto   ">
                     <Phone className="mr-2 h-5 w-5" /> +971 55 116 5993
                   </Button>
                   <Button
+                    whatsappBtn
                     variant="secondary"
                     size="lg"
                     className="w-full sm:w-auto "
@@ -76,6 +77,8 @@ const CheapMoversPage = () => {
                   src={heroImage}
                   alt="Affordable and professional Hamad Movers team completing a quality home move in Dubai with the same branded truck and trained crew"
                   fill
+                  loading="eager"
+                  placeholder="blur"
                   className="z-10 w-full h-full object-cover rounded-4xl shadow-2xl"
                 />
               </div>

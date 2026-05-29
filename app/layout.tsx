@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/sonner";
 import { APP } from "@/lib/App";
+import ActionButton from "@/components/ActionButtons";
 const HeroFont = localFont({
   src: "./HeroLight-Bold.woff2",
   display: "swap",
@@ -67,6 +68,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <ActionButton />
         <Toaster />
         <Footer />
       </body>

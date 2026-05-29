@@ -62,13 +62,14 @@ const OfficeMoversPage = () => {
                   doesn&apos;t.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                  <Button size="lg" className="w-full sm:w-auto   ">
+                  <Button size="lg" className="w-full sm:w-auto   " callBtn>
                     <Phone className="mr-2 h-5 w-5" /> +971 55 116 5993
                   </Button>
                   <Button
                     variant="secondary"
                     size="lg"
                     className="w-full sm:w-auto "
+                    whatsappBtn
                   >
                     <MessageSquare className="mr-2 h-5 w-5" /> WhatsApp Us
                   </Button>

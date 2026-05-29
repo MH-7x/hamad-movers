@@ -55,7 +55,12 @@ export default function Footer() {
                 services across all emirates.
               </p>
               <div className="mt-5 flex gap-3">
-                <div className="size-9 border border-muted/50 hover:border-primary transition duration-200  rounded-full flex items-center justify-center ">
+                <Link
+                  href={"https://web.facebook.com/hamadmoversandpackers"}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="size-9 border border-muted/50 hover:border-primary transition duration-200  rounded-full flex items-center justify-center "
+                >
                   <svg
                     fill="#e5e7eb"
                     className="w-6 h-6"
@@ -72,8 +77,12 @@ export default function Footer() {
                       <path d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z"></path>
                     </g>
                   </svg>
-                </div>
-                <div className="size-9 border border-muted/50 hover:border-primary transition duration-200  rounded-full flex items-center justify-center">
+                </Link>
+                <Link
+                  href={"https://www.instagram.com/hamadmoversandpackers/"}
+                  rel="noopener nofollow"
+                  className="size-9 border border-muted/50 hover:border-primary transition duration-200  rounded-full flex items-center justify-center"
+                >
                   <svg
                     fill="#e5e7eb"
                     className="w-6 h-6"
@@ -91,7 +100,7 @@ export default function Footer() {
                       <path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"></path>
                     </g>
                   </svg>
-                </div>
+                </Link>
                 <div className="size-9 border border-muted/50 hover:border-primary transition duration-200  rounded-full flex items-center justify-center">
                   <svg
                     fill="#e5e7eb"
