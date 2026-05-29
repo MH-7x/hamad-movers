@@ -49,6 +49,7 @@ export default function QuoteForm() {
     }
     try {
       const response = await SendMail({ data });
+
       if (!response.success) {
         toast.error(
           response.error || "Failed to send quote request. Please try again.",

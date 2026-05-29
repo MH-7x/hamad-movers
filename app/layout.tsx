@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/sonner";
 import { APP } from "@/lib/App";
 import ActionButton from "@/components/ActionButtons";
+import GTM from "@/components/GTM";
 const HeroFont = localFont({
   src: "./HeroLight-Bold.woff2",
   display: "swap",
@@ -65,6 +66,7 @@ export default function RootLayout({
         HeroFont.variable,
       )}
     >
+      <GTM />
       <body>
         <Navbar />
         {children}

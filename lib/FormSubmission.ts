@@ -13,6 +13,7 @@ export const SendMail = async ({
     data.movingFrom,
     data.movingTo,
   ].some((val) => val.trim() === "");
+
   if (hasEmptyField) {
     return { success: false, error: "All fields are required." };
   }
