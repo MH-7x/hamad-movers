@@ -30,11 +30,11 @@ const rasAlKhaimahAreas = [
 export const metadata = MetadataTemplate({
   meta: {
     title: "Movers in Ras Al Khaimah | Moving Company RAK ",
-    desc: "Professional movers and packers in Ras Al Khaimah. Hamad Movers offers home, villa & office moving in RAK and inter-emirate moves. Call +971 55 116 5993.",
+    desc: "Professional movers and packers in Ras Al Khaimah. Hamad Movers and Packers offers home, villa & office moving in RAK and inter-emirate moves. Call +971 55 116 5993.",
   },
   image: {
     path: "/loc/movers-and-packers-ras-al-khaimah-hamad-movers.jpg",
-    alt: "Professional movers and packers in Al Ain – Hamad Movers branded truck outside Al Ain villa compound",
+    alt: "Professional movers and packers in Al Ain – Hamad Movers and Packers branded truck outside Al Ain villa compound",
   },
   path: "/movers-in-ras-al-khaimah",
 });
@@ -51,10 +51,10 @@ const MoversInRasAlKhaimah = () => {
         }
         desc={
           <>
-            Hamad Movers provides moving services in Ras Al Khaimah — home
-            moves, villa relocations, furniture transport, and office shifting.
-            We also handle moves between RAK and other UAE emirates, including
-            Dubai and Abu Dhabi.
+            Hamad Movers and Packers provides moving services in Ras Al Khaimah
+            — home moves, villa relocations, furniture transport, and office
+            shifting. We also handle moves between RAK and other UAE emirates,
+            including Dubai and Abu Dhabi.
             <br />
             RAK is further north than most other emirates, and long-distance
             moves require more planning and coordination. We factor in drive
@@ -64,7 +64,7 @@ const MoversInRasAlKhaimah = () => {
         }
         image={{
           src: heroImage,
-          alt: "Professional movers and packers in Ras Al Khaimah – Hamad Movers team loading a truck outside a modern UAE villa",
+          alt: "Professional movers and packers in Ras Al Khaimah – Hamad Movers and Packers team loading a truck outside a modern UAE villa",
         }}
       />
       <FeatureStats />
@@ -216,7 +216,7 @@ const MoversInRasAlKhaimah = () => {
               className="group p-8 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
             >
               <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors mb-2">
-                About Hamad Movers
+                About Hamad Movers and Packers
               </h3>
               <p className="text-sm text-muted-foreground">
                 Learn more about our company, experience, and commitment to

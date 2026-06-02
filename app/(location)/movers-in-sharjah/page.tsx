@@ -32,7 +32,7 @@ const SharjahAreas = [
 export const metadata = MetadataTemplate({
   meta: {
     title: "Movers in Sharjah | Moving Company in Sharjah",
-    desc: "Reliable movers and packers in Sharjah at honest rates. Hamad Movers handles home, villa & office moves across Sharjah and inter-emirate. Call +971 55 116 5993.",
+    desc: "Reliable movers and packers in Sharjah at honest rates. Hamad Movers and Packers handles home, villa & office moves across Sharjah and inter-emirate. Call +971 55 116 5993.",
   },
   image: {
     path: "/loc/movers-and-packers-sharjah-hamad-movers.jpg",
@@ -52,9 +52,9 @@ const MoversInSharjah = () => {
         }
         desc={
           <>
-            Hamad Movers provides moving services across Sharjah — from small
-            apartment moves to large villa relocations. We also handle
-            Sharjah-to-Dubai moves, which are among the most common
+            Hamad Movers and Packers provides moving services across Sharjah —
+            from small apartment moves to large villa relocations. We also
+            handle Sharjah-to-Dubai moves, which are among the most common
             inter-emirate moves we do.
             <br />
             Our crew comes with all packing materials and the right size truck.
@@ -64,7 +64,7 @@ const MoversInSharjah = () => {
         }
         image={{
           src: heroImage,
-          alt: "Professional movers and packers in Sharjah – Hamad Movers team loading a white branded truck",
+          alt: "Professional movers and packers in Sharjah – Hamad Movers and Packers team loading a white branded truck",
         }}
       />
       <FeatureStats />
@@ -222,7 +222,7 @@ const MoversInSharjah = () => {
               className="group p-8 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
             >
               <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors mb-2">
-                About Hamad Movers
+                About Hamad Movers and Packers
               </h3>
               <p className="text-sm text-muted-foreground">
                 Learn more about our company, experience, and commitment to

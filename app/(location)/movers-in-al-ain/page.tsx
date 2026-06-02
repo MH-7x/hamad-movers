@@ -31,11 +31,11 @@ const alAinAreas = [
 export const metadata = MetadataTemplate({
   meta: {
     title: "Movers in Al Ain | Get A Quote in 10 Minutes",
-    desc: "Reliable movers and packers in Al Ain for homes, villas, and offices. Hamad Movers covers Al Ain and inter-emirate moves to Dubai & Abu Dhabi. Call +971 55 116 5993.",
+    desc: "Reliable movers and packers in Al Ain for homes, villas, and offices. Hamad Movers and Packers covers Al Ain and inter-emirate moves to Dubai & Abu Dhabi. Call +971 55 116 5993.",
   },
   image: {
     path: "/loc/movers-and-packers-al-ain-hamad-movers.jpg",
-    alt: "Professional movers and packers in Al Ain – Hamad Movers branded truck outside Al Ain villa compound",
+    alt: "Professional movers and packers in Al Ain – Hamad Movers and Packers branded truck outside Al Ain villa compound",
   },
   path: "/movers-in-al-ain",
 });
@@ -51,10 +51,10 @@ const MoversInAlAin = () => {
         }
         desc={
           <>
-            Hamad Movers provides moving services in Al Ain — residential moves,
-            villa relocations, office shifting, and furniture transport. Al Ain
-            is about 1.5 hours from Dubai and 1 hour from Abu Dhabi, making
-            inter-emirate moves a regular part of our work here.
+            Hamad Movers and Packers provides moving services in Al Ain —
+            residential moves, villa relocations, office shifting, and furniture
+            transport. Al Ain is about 1.5 hours from Dubai and 1 hour from Abu
+            Dhabi, making inter-emirate moves a regular part of our work here.
             <br />
             Our crew handles Al Ain moves the same way we handle every other job
             — proper packing, careful loading, on-time delivery, and a price
@@ -63,7 +63,7 @@ const MoversInAlAin = () => {
         }
         image={{
           src: heroImage,
-          alt: "Professional movers and packers in Al Ain – Hamad Movers team loading a truck outside a modern UAE villa",
+          alt: "Professional movers and packers in Al Ain – Hamad Movers and Packers team loading a truck outside a modern UAE villa",
         }}
       />
       <FeatureStats />
@@ -221,7 +221,7 @@ const MoversInAlAin = () => {
               className="group p-8 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
             >
               <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors mb-2">
-                About Hamad Movers
+                About Hamad Movers and Packers
               </h3>
               <p className="text-sm text-muted-foreground">
                 Learn more about our company, experience, and commitment to

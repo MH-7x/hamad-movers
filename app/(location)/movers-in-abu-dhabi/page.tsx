@@ -31,8 +31,8 @@ const abuDhabiAreas = [
 ];
 export const metadata = MetadataTemplate({
   meta: {
-    title: "Movers in Abu Dhabi | Expert Moving Services by Hamad Movers",
-    desc: "Professional movers and packers in Abu Dhabi for homes, villas, and offices. Hamad Movers covers all Abu Dhabi areas with trained crews. Call +971 55 116 5993.",
+    title: "Movers in Abu Dhabi | Fast Moving Services in Abu Dhabi",
+    desc: "Professional movers and packers in Abu Dhabi for homes, villas, and offices. Hamad Movers and Packers covers all Abu Dhabi areas with trained crews. Call +971 55 116 5993.",
   },
   image: {
     path: "/loc/movers-and-packers-abu-dhabi-hamad-movers.jpg",
@@ -65,7 +65,7 @@ const page = () => {
         }
         image={{
           src: heroImage,
-          alt: "Professional movers and packers in Abu Dhabi – Hamad Movers team loading a truck outside a modern UAE villa",
+          alt: "Professional movers and packers in Abu Dhabi – Hamad Movers and Packers team loading a truck outside a modern UAE villa",
         }}
       />
       <FeatureStats />
@@ -88,7 +88,7 @@ const page = () => {
             linkText: "Contact For House Moving",
             icon: <Icons.House />,
             name: "/house-movers-dubai-hamad-movers.jpg",
-            alt: "Professional house movers in Dubai carrying boxes during a home shifting service by Hamad Movers",
+            alt: "Professional house movers in Dubai carrying boxes during a home shifting service by Hamad Movers and Packers",
             link: "/furniture-movers-dubai",
           },
           {
@@ -98,7 +98,7 @@ const page = () => {
             linkText: "Contact For Villa Moving",
             icon: <Icons.Villa />,
             name: "/villa-movers-dubai-hamad-movers.jpg",
-            alt: "Hamad Movers crew shifting furniture during a villa moving service in Dubai",
+            alt: "Hamad Movers and Packers crew shifting furniture during a villa moving service in Dubai",
             link: "/villa-movers-dubai",
           },
           {
@@ -108,7 +108,7 @@ const page = () => {
             linkText: "Contact For Office Moving",
             icon: <Icons.Office />,
             name: "/office-movers-dubai-hamad-movers.jpg",
-            alt: "Hamad Movers team handling office relocation in Dubai with professional packing and transport",
+            alt: "Hamad Movers and Packers team handling office relocation in Dubai with professional packing and transport",
             link: "/office-movers-dubai",
           },
           {
@@ -118,7 +118,7 @@ const page = () => {
             linkText: "Contact For Furniture Moving",
             icon: <Icons.Furniture />,
             name: "/furniture-movers-dubai-hamad-movers.jpg",
-            alt: "Hamad Movers professional disassembling and wrapping furniture for moving service in Dubai",
+            alt: "Hamad Movers and Packers professional disassembling and wrapping furniture for moving service in Dubai",
             link: "/furniture-movers-dubai",
           },
           {
@@ -128,7 +128,7 @@ const page = () => {
             linkText: "Contact For Packing Services",
             icon: <Icons.Packing />,
             name: "/packing-moving-services-dubai-hamad-movers.jpg",
-            alt: "Hamad Movers packing team wrapping and boxing household items for a full packing service in Dubai",
+            alt: "Hamad Movers and Packers packing team wrapping and boxing household items for a full packing service in Dubai",
             link: "/packing-and-moving-services",
           },
         ]}
@@ -153,7 +153,7 @@ const page = () => {
           "The drive from Dubai to Abu Dhabi is around 1.5 hours, but loading and unloading time adds to the total. For a 2-bedroom apartment, expect a full day. For a villa, plan for one to two days.",
         ]}
         imageUrl="/loc/furniture-movers-abu-dhabi-packing-service-hamad-movers.jpg"
-        imageAlt="Hamad Movers professional packing and furniture wrapping service inside an Abu Dhabi apartment"
+        imageAlt="Hamad Movers and Packers professional packing and furniture wrapping service inside an Abu Dhabi apartment"
         isReversed={true}
         contactButtonText="Get A Instant Quote"
       />
@@ -168,7 +168,7 @@ const page = () => {
           "We move all types of furniture in Abu Dhabi — sofas, beds, wardrobes, appliances, and more. If the item needs disassembly, we handle that. Reassembly at the new location is included.",
         ]}
         imageUrl="/loc/villa-moving-service-abu-dhabi-hamad-movers.jpg"
-        imageAlt="Hamad Movers team carrying furniture during a villa relocation in Abu Dhabi, UAE"
+        imageAlt="Hamad Movers and Packers team carrying furniture during a villa relocation in Abu Dhabi, UAE"
         isReversed={false}
         contactButtonText="Contact For Furniture Moving"
       />

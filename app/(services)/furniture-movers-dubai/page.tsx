@@ -31,7 +31,7 @@ export const metadata = MetadataTemplate({
   },
   image: {
     path: "/ser/furniture-movers-dubai-hamad-movers.jpg",
-    alt: "Hamad Movers team carefully wrapping and moving a large sofa in Dubai, showcasing our furniture moving services",
+    alt: "Hamad Movers and Packers team carefully wrapping and moving a large sofa in Dubai, showcasing our furniture moving services",
   },
   path: "/furniture-movers-dubai",
 });
@@ -58,8 +58,8 @@ const FurnitureMoversPage = () => {
                 <p className="text-lg  text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed ">
                   Sometimes you&apos;re not moving an entire home — you just
                   need furniture moved. Whether it&apos;s one wardrobe or a full
-                  living room set, Hamad Movers handles furniture-only moves
-                  with care.
+                  living room set, Hamad Movers and Packers handles
+                  furniture-only moves with care.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <Button size="lg" className="w-full sm:w-auto   " callBtn>
@@ -79,7 +79,7 @@ const FurnitureMoversPage = () => {
                 <div className="absolute inset-0 bg-primary rounded-4xl -rotate-6 transition-transform hover:rotate-0 duration-500"></div>
                 <Image
                   src={heroImage}
-                  alt="Hamad Movers team carefully wrapping and moving a large sofa in Dubai, showcasing our furniture moving services"
+                  alt="Hamad Movers and Packers team carefully wrapping and moving a large sofa in Dubai, showcasing our furniture moving services"
                   fill
                   className="z-10 w-full h-full object-cover rounded-4xl shadow-2xl"
                 />

@@ -83,7 +83,7 @@ export default function TermsAndConditions() {
               </h2>
               <p className="text-foreground mb-4">
                 We take great care with your belongings. However, Hamad Movers
-                and Packers is not liable for:
+                and Packers and Packers is not liable for:
               </p>
               <ul className="list-disc list-inside space-y-2 text-foreground">
                 <li>Pre-existing damage to furniture or items</li>

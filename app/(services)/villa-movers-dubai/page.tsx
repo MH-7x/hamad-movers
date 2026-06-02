@@ -27,11 +27,11 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 export const metadata = MetadataTemplate({
   meta: {
     title: "Villa Movers Dubai | Villa Shifting Services UAE",
-    desc: "Professional villa movers in Dubai. Hamad Movers handles full villa relocations — heavy furniture, multiple rooms, packing included. Get a free quote today.",
+    desc: "Professional villa movers in Dubai. Hamad Movers and Packers handles full villa relocations — heavy furniture, multiple rooms, packing included. Get a free quote today.",
   },
   image: {
     path: "/ser/villa-movers-dubai-hamad-movers.jpg",
-    alt: "hamad movers villa moving services in dubai",
+    alt: "hamad movers and packers villa moving services in dubai",
   },
   path: "/villa-movers-dubai",
 });
@@ -58,8 +58,9 @@ const VillaMoversPage = () => {
                 <p className="text-lg  text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed ">
                   Moving a villa is a different job from moving an apartment.
                   You&apos;re dealing with more rooms, heavier furniture, often
-                  outdoor items, and a lot more volume. Hamad Movers handles
-                  full villa relocations with the right equipment and crew.
+                  outdoor items, and a lot more volume. Hamad Movers and Packers
+                  handles full villa relocations with the right equipment and
+                  crew.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <Button size="lg" className="w-full sm:w-auto   " callBtn>
@@ -79,7 +80,7 @@ const VillaMoversPage = () => {
                 <div className="absolute inset-0 bg-primary rounded-4xl -rotate-6 transition-transform hover:rotate-0 duration-500"></div>
                 <Image
                   src={heroImage}
-                  alt="hamad movers villa moving services in dubai"
+                  alt="hamad movers and packers villa moving services in dubai"
                   fill
                   className="z-10 w-full h-full object-cover rounded-4xl shadow-2xl"
                 />

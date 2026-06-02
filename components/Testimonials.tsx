@@ -11,7 +11,7 @@ const googleReviews = [
     time: "2 weeks ago",
     star: 5,
     review:
-      "Hamad Movers made our relocation from Downtown Dubai to Arabian Ranches completely stress-free. The packing crew was punctual and handled our fragile items with great care.",
+      "Hamad Movers and Packers made our relocation from Downtown Dubai to Arabian Ranches completely stress-free. The packing crew was punctual and handled our fragile items with great care.",
     image: "/ava/32.jpg",
   },
   {
@@ -27,7 +27,7 @@ const googleReviews = [
     time: "4 days ago",
     star: 5,
     review:
-      "Highly recommend Hamad Movers if you need a reliable team. They dismantled and reassembled my heavy bedroom furniture perfectly without a single scratch.",
+      "Highly recommend Hamad Movers and Packers if you need a reliable team. They dismantled and reassembled my heavy bedroom furniture perfectly without a single scratch.",
     image: "/ava/86.jpg",
   },
   {
@@ -51,7 +51,7 @@ const googleReviews = [
     time: "5 days ago",
     star: 5,
     review:
-      "Honestly the best moving company I've used in the UAE. Hamad Movers packed up my entire kitchen in an hour and nothing was broken during transit.",
+      "Honestly the best moving company I've used in the UAE. Hamad Movers and Packers packed up my entire kitchen in an hour and nothing was broken during transit.",
     image: "/ava/90.jpg",
   },
   {
@@ -75,7 +75,7 @@ const googleReviews = [
     time: "3 weeks ago",
     star: 5,
     review:
-      "We used Hamad Movers for our corporate office relocation in Business Bay. They were highly organized and minimized our downtime completely.",
+      "We used Hamad Movers and Packers for our corporate office relocation in Business Bay. They were highly organized and minimized our downtime completely.",
     image: "/ava/11.jpg",
   },
   {
@@ -83,7 +83,7 @@ const googleReviews = [
     time: "2 months ago",
     star: 5,
     review:
-      "A truly professional and hassle-free moving experience from start to finish. I will definitely be recommending Hamad Movers to all my friends and family.",
+      "A truly professional and hassle-free moving experience from start to finish. I will definitely be recommending Hamad Movers and Packers to all my friends and family.",
     image: "/ava/19.jpg",
   },
 ];

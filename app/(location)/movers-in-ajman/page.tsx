@@ -30,7 +30,7 @@ const ajmanAreas = [
 export const metadata = MetadataTemplate({
   meta: {
     title: "Movers in Ajman | Hamad Movers and Packers Ajman",
-    desc: "Professional movers and packers in Ajman. Hamad Movers offers home, villa & office moving services in Ajman at competitive rates. Call +971 55 116 5993.",
+    desc: "Professional movers and packers in Ajman. Hamad Movers and Packers offers home, villa & office moving services in Ajman at competitive rates. Call +971 55 116 5993.",
   },
   image: {
     path: "/loc/movers-and-packers-ajman-hamad-movers.jpg",
@@ -62,7 +62,7 @@ const AjmanPage = () => {
         }
         image={{
           src: heroImage,
-          alt: "Professional movers and packers in Abu Dhabi – Hamad Movers team loading a truck outside a modern UAE villa",
+          alt: "Professional movers and packers in Abu Dhabi – Hamad Movers and Packers team loading a truck outside a modern UAE villa",
         }}
       />
       <FeatureStats />
@@ -209,7 +209,7 @@ const AjmanPage = () => {
               className="group p-8 bg-card rounded-2xl border border-border hover:border-primary hover:shadow-lg transition-all"
             >
               <h3 className="font-semibold text-lg text-foreground group-hover:text-primary transition-colors mb-2">
-                About Hamad Movers
+                About Hamad Movers and Packers
               </h3>
               <p className="text-sm text-muted-foreground">
                 Learn more about our company, experience, and commitment to

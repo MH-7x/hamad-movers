@@ -35,7 +35,7 @@ const AboutUsPage = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 space-y-6 text-center lg:text-left">
               <h1 className=" md:text-5xl text-3xl text-foreground leading-[1.1]">
-                About Hamad Movers <br />
+                About Hamad Movers and Packers <br />
                 <span className="text-primary">and Packers in Dubai</span>
               </h1>
               <p className="text-lg  text-muted-foreground max-w-2xl mx-auto lg:mx-0">
@@ -81,7 +81,7 @@ const AboutUsPage = () => {
                     src={
                       "/loc/furniture-movers-abu-dhabi-packing-service-hamad-movers.jpg"
                     }
-                    alt="Professional furniture movers in Abu Dhabi packing a sofa for a villa relocation service by Hamad Movers"
+                    alt="Professional furniture movers in Abu Dhabi packing a sofa for a villa relocation service by Hamad Movers and Packers"
                     fill
                     className="object-cover"
                   />
@@ -92,7 +92,7 @@ const AboutUsPage = () => {
                     src={
                       "/gallery/hamad-movers-long-distance-moving-uae-highway.jpg"
                     }
-                    alt="Hamad Movers long distance moving service in the UAE – a moving truck driving on a highway with desert landscape in the background"
+                    alt="Hamad Movers and Packers long distance moving service in the UAE – a moving truck driving on a highway with desert landscape in the background"
                     fill
                     className="object-cover"
                   />
@@ -102,7 +102,7 @@ const AboutUsPage = () => {
                 <div className="rounded-xl aspect-3/4 bg-primary/50 relative overflow-hidden">
                   <Image
                     src={"/gallery/hamad-movers-home-villa-moving-dubai.jpg"}
-                    alt="Hamad Movers home and villa moving service in Dubai – a moving truck parked outside a modern villa with movers carrying boxes"
+                    alt="Hamad Movers and Packers home and villa moving service in Dubai – a moving truck parked outside a modern villa with movers carrying boxes"
                     fill
                     className="object-cover"
                   />
@@ -112,7 +112,7 @@ const AboutUsPage = () => {
                     src={
                       "/loc/villa-movers-rak-furniture-packing-hamad-movers.jpg"
                     }
-                    alt="Villa movers in Ras Al Khaimah packing furniture for a relocation service by Hamad Movers"
+                    alt="Villa movers in Ras Al Khaimah packing furniture for a relocation service by Hamad Movers and Packers"
                     fill
                     className="object-cover"
                   />

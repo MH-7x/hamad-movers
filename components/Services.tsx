@@ -116,7 +116,7 @@ const servicesData: Service[] = [
     linkText: "Contact For House Moving",
     icon: Icons.House,
     name: "/house-movers-dubai-hamad-movers.jpg",
-    alt: "Professional house movers in Dubai carrying boxes during a home shifting service by Hamad Movers",
+    alt: "Professional house movers in Dubai carrying boxes during a home shifting service by Hamad Movers and Packers",
   },
   {
     title: "Villa Movers in Dubai",
@@ -125,7 +125,7 @@ const servicesData: Service[] = [
     linkText: "Contact For Villa Moving",
     icon: Icons.Villa,
     name: "/villa-movers-dubai-hamad-movers.jpg",
-    alt: "Hamad Movers crew shifting furniture during a villa moving service in Dubai",
+    alt: "Hamad Movers and Packers crew shifting furniture during a villa moving service in Dubai",
   },
   {
     title: "Office Movers in Dubai",
@@ -134,7 +134,7 @@ const servicesData: Service[] = [
     linkText: "Contact For Office Moving",
     icon: Icons.Office,
     name: "/office-movers-dubai-hamad-movers.jpg",
-    alt: "Hamad Movers team handling office relocation in Dubai with professional packing and transport",
+    alt: "Hamad Movers and Packers team handling office relocation in Dubai with professional packing and transport",
   },
   {
     title: "Furniture Movers in Dubai",
@@ -143,7 +143,7 @@ const servicesData: Service[] = [
     linkText: "Contact For Furniture Moving",
     icon: Icons.Furniture,
     name: "/furniture-movers-dubai-hamad-movers.jpg",
-    alt: "Hamad Movers professional disassembling and wrapping furniture for moving service in Dubai",
+    alt: "Hamad Movers and Packers professional disassembling and wrapping furniture for moving service in Dubai",
   },
   {
     title: "Packing and Moving Services",
@@ -152,7 +152,7 @@ const servicesData: Service[] = [
     linkText: "Contact For Packing Services",
     icon: Icons.Packing,
     name: "/packing-moving-services-dubai-hamad-movers.jpg",
-    alt: "Hamad Movers packing team wrapping and boxing household items for a full packing service in Dubai",
+    alt: "Hamad Movers and Packers packing team wrapping and boxing household items for a full packing service in Dubai",
   },
   {
     title: "Cheap Movers in Dubai",
@@ -161,7 +161,7 @@ const servicesData: Service[] = [
     linkText: "Contact For Affordable Moving",
     icon: Icons.Cheap,
     name: "/cheap-movers-dubai-affordable-moving-hamad-movers.jpg",
-    alt: "Affordable movers in Dubai loading boxes into truck — budget-friendly moving service by Hamad Movers",
+    alt: "Affordable movers in Dubai loading boxes into truck — budget-friendly moving service by Hamad Movers and Packers",
   },
 ];
 export default function Services({

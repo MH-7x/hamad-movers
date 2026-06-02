@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="md:w-[120px] w-[90px] md:h-[55px] h-[41px] relative shrink-0">
               <Image
                 src={"/logo.svg"}
-                alt="Hamad Movers logo"
+                alt="Hamad Movers and Packers logo"
                 fill
                 className="object-contain"
               />

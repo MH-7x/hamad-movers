@@ -6,7 +6,7 @@ import heroImage from "@/public/hamad-movers-and-packers-in-dubai.jpg";
 export const metadata = MetadataTemplate({
   meta: {
     title: "Hamad Movers and Packers Dubai | Trusted Moving Services",
-    desc: "Need movers and packers in Dubai? Hamad Movers offers professional home, villa, office & furniture moving services across Dubai and the UAE. Call +971 55 116 5993 for a free quote.",
+    desc: "Hamad Movers and Packers in Dubai offers professional home, villa, office & furniture moving services across Dubai and the UAE. Call +971 55 116 5993 for a free quote.",
   },
   image: {
     path: "/hamad-movers-and-packers-in-dubai.jpg",

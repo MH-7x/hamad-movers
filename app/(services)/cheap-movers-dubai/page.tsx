@@ -24,11 +24,11 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 export const metadata = MetadataTemplate({
   meta: {
     title: "Cheap Movers Dubai | Affordable Moving Company UAE",
-    desc: "Affordable movers and packers in Dubai with transparent pricing and no hidden fees. Hamad Movers offers quality moving at honest rates. Call +971 55 116 5993.",
+    desc: "Affordable movers and packers in Dubai with transparent pricing and no hidden fees. Hamad Movers and Packers offers quality moving at honest rates. Call +971 55 116 5993.",
   },
   image: {
     path: "/ser/affordable-movers-dubai-hamad-movers.jpg",
-    alt: "Affordable and professional Hamad Movers team completing a quality home move in Dubai with the same branded truck and trained crew",
+    alt: "Affordable and professional Hamad Movers and Packers team completing a quality home move in Dubai with the same branded truck and trained crew",
   },
   path: "/cheap-movers-dubai",
 });
@@ -54,8 +54,8 @@ const CheapMoversPage = () => {
                 </h1>
                 <p className="text-lg  text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed ">
                   Affordable moving in Dubai doesn&apos;t have to mean a bad
-                  experience. Hamad Movers gives you a fixed price before the
-                  move starts. What we quote is what you pay.
+                  experience. Hamad Movers and Packers gives you a fixed price
+                  before the move starts. What we quote is what you pay.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <Button callBtn size="lg" className="w-full sm:w-auto   ">
@@ -75,7 +75,7 @@ const CheapMoversPage = () => {
                 <div className="absolute inset-0 bg-primary rounded-4xl -rotate-6 transition-transform hover:rotate-0 duration-500"></div>
                 <Image
                   src={heroImage}
-                  alt="Affordable and professional Hamad Movers team completing a quality home move in Dubai with the same branded truck and trained crew"
+                  alt="Affordable and professional Hamad Movers and Packers team completing a quality home move in Dubai with the same branded truck and trained crew"
                   fill
                   loading="eager"
                   placeholder="blur"

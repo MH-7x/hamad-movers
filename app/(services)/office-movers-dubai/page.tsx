@@ -27,11 +27,11 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 export const metadata = MetadataTemplate({
   meta: {
     title: "Office Movers in Dubai | Commercial Relocation Services",
-    desc: "Professional office movers in Dubai. Hamad Movers handles commercial relocations — furniture, IT equipment, files — with minimal disruption. Call +971 55 116 5993.",
+    desc: "Professional office movers in Dubai. Hamad Movers and Packers handles commercial relocations — furniture, IT equipment, files — with minimal disruption. Call +971 55 116 5993.",
   },
   image: {
     path: "/ser/Office-Movers-in-Dubai.jpg",
-    alt: "office movers in dubai, hamad movers team carefully packing and moving office furniture and equipment in Dubai, showcasing our commercial moving services",
+    alt: "office movers in dubai, hamad movers and packers team carefully packing and moving office furniture and equipment in Dubai, showcasing our commercial moving services",
   },
   path: "/office-movers-dubai",
 });
@@ -58,8 +58,8 @@ const OfficeMoversPage = () => {
                 <p className="text-lg  text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed ">
                   Office moves are more sensitive than home moves. You have IT
                   equipment, filing systems, and tight timelines. A disorganized
-                  move can cost you working days. Hamad Movers makes sure it
-                  doesn&apos;t.
+                  move can cost you working days. Hamad Movers and Packers makes
+                  sure it doesn&apos;t.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <Button size="lg" className="w-full sm:w-auto   " callBtn>
@@ -79,7 +79,7 @@ const OfficeMoversPage = () => {
                 <div className="absolute inset-0 bg-primary rounded-4xl -rotate-6 transition-transform hover:rotate-0 duration-500"></div>
                 <Image
                   src={heroImage}
-                  alt="office movers in dubai, hamad movers team carefully packing and moving office furniture and equipment in Dubai, showcasing our commercial moving services"
+                  alt="office movers in dubai, hamad movers and packers team carefully packing and moving office furniture and equipment in Dubai, showcasing our commercial moving services"
                   fill
                   className="z-10 w-full h-full object-cover rounded-4xl shadow-2xl"
                 />

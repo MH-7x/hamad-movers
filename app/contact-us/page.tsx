@@ -5,12 +5,12 @@ import CTASection from "@/components/CTA";
 
 export const metadata = MetadataTemplate({
   meta: {
-    title: "Contact Hamad Movers | Get Your Free Moving Quote",
-    desc: "Get in touch with Hamad Movers today. Call us, WhatsApp, or fill out the quote form for professional moving services in Dubai and the UAE.",
+    title: "Contact Hamad Movers and Packers | Get a Quote",
+    desc: "Get in touch with Hamad Movers and Packers today. Call us, WhatsApp, or fill out the quote form for professional moving services in Dubai and the UAE.",
   },
   image: {
     path: "/hamad-movers-and-packers-in-dubai.jpg",
-    alt: "Contact Hamad Movers",
+    alt: "Contact Hamad Movers and Packers",
   },
   path: "/contact-us",
 });
@@ -115,7 +115,7 @@ export default function ContactUs() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             <div>
               <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-                Why Choose Hamad Movers?
+                Why Choose Hamad Movers and Packers?
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">

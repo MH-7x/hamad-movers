@@ -14,43 +14,43 @@ const images = [
   {
     fileName: "/gallery/hamad-movers-home-villa-moving-dubai.jpg",
     altText:
-      "Hamad Movers professional movers carrying furniture outside a luxury Dubai villa with Burj Khalifa skyline in background",
+      "Hamad Movers and Packers professional movers carrying furniture outside a luxury Dubai villa with Burj Khalifa skyline in background",
   },
   {
     fileName: "/gallery/hamad-movers-packing-wrapping-service-dubai-villa.jpg",
     altText:
-      "Hamad Movers packing team wrapping furniture with bubble wrap inside a modern Dubai villa living room",
+      "Hamad Movers and Packers packing team wrapping furniture with bubble wrap inside a modern Dubai villa living room",
   },
   {
     fileName:
       "/gallery/hamad-movers-professional-packing-highrise-apartment-dubai.jpg",
     altText:
-      "Hamad Movers team packing and boxing household items inside a modern high-rise apartment in Dubai",
+      "Hamad Movers and Packers team packing and boxing household items inside a modern high-rise apartment in Dubai",
   },
   {
     fileName: "/gallery/hamad-movers-furniture-assembly-service-dubai.jpg",
     altText:
-      "Hamad Movers technician assembling a wardrobe inside a modern Dubai villa bedroom",
+      "Hamad Movers and Packers technician assembling a wardrobe inside a modern Dubai villa bedroom",
   },
   {
     fileName: "/gallery/hamad-movers-furniture-assembly-apartment-dubai.jpg",
     altText:
-      "Hamad Movers professional assembling a modular sofa set in a newly moved-in Dubai high-rise apartment",
+      "Hamad Movers and Packers professional assembling a modular sofa set in a newly moved-in Dubai high-rise apartment",
   },
   {
     fileName: "/gallery/hamad-movers-residential-moving-highrise-dubai.jpg",
     altText:
-      "Hamad Movers team loading furniture into moving truck outside a modern high-rise residential building in Dubai",
+      "Hamad Movers and Packers team loading furniture into moving truck outside a modern high-rise residential building in Dubai",
   },
   {
     fileName: "/gallery/hamad-movers-long-distance-moving-uae-highway.jpg",
     altText:
-      "Hamad Movers branded truck driving on a UAE desert highway during an inter-emirate relocation",
+      "Hamad Movers and Packers branded truck driving on a UAE desert highway during an inter-emirate relocation",
   },
   {
     fileName: "/gallery/hamad-movers-team-moving-truck-burj-khalifa-dubai.jpg",
     altText:
-      "Hamad Movers professional moving team standing in front of branded truck with Burj Khalifa in background Dubai",
+      "Hamad Movers and Packers professional moving team standing in front of branded truck with Burj Khalifa in background Dubai",
   },
 ];
 
@@ -81,7 +81,7 @@ export function MovingGallery() {
                     <Image
                       src={src.fileName}
                       fill
-                      alt={`${src.altText} - Hamad Movers Dubai`}
+                      alt={`${src.altText} - Hamad Movers and Packers Dubai`}
                       className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                     />
                     {/* Subtle Overlay on Hover */}

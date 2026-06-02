@@ -28,11 +28,11 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 export const metadata = MetadataTemplate({
   meta: {
     title: "House Movers in Dubai | Home Shifting Services ",
-    desc: "Professional house movers in Dubai for apartments, studios, and family homes. Hamad Movers handles packing, loading, transport & unloading. Call +971 55 116 5993.",
+    desc: "Professional house movers in Dubai for apartments, studios, and family homes. Hamad Movers and Packers handles packing, loading, transport & unloading. Call +971 55 116 5993.",
   },
   image: {
     path: "/ser/house-movers-dubai-hamad-movers.jpg",
-    alt: "hamad movers house moving services in dubai",
+    alt: "hamad movers and packers house moving services in dubai",
   },
   path: "/house-movers-in-dubai",
 });
@@ -57,8 +57,9 @@ const HouseMoversPage = () => {
                   <span className="text-primary">House Movers</span> in Dubai
                 </h1>
                 <p className="text-lg  text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed ">
-                  Moving house in Dubai is a lot of work. Hamad Movers handles
-                  the packing, lifting, and transport so you don&apos;t have to.
+                  Moving house in Dubai is a lot of work. Hamad Movers and
+                  Packers handles the packing, lifting, and transport so you
+                  don&apos;t have to.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <Button size="lg" className="w-full sm:w-auto   " callBtn>
@@ -78,7 +79,7 @@ const HouseMoversPage = () => {
                 <div className="absolute inset-0 bg-primary rounded-4xl -rotate-6 transition-transform hover:rotate-0 duration-500"></div>
                 <Image
                   src={heroImage}
-                  alt="hamad movers house moving services in dubai"
+                  alt="hamad movers and packers house moving services in dubai"
                   fill
                   className="z-10 w-full h-full object-cover rounded-4xl shadow-2xl"
                 />

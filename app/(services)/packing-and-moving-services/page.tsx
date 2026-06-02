@@ -27,8 +27,8 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 
 export const metadata = MetadataTemplate({
   meta: {
-    title: "Packing and Moving Services Dubai | Hamad Movers",
-    desc: "Full packing and moving services in Dubai and UAE. Hamad Movers packs your home or office using quality materials — boxes, bubble wrap, stretch film. Call +971 55 116 5993.",
+    title: "Packing and Moving Services Dubai | Hamad Movers and Packers",
+    desc: "Full packing and moving services in Dubai and UAE. Hamad Movers and Packers packs your home or office using quality materials — boxes, bubble wrap, stretch film. Call +971 55 116 5993.",
   },
   image: {
     path: "/ser/packing-moving-services-dubai-hamad-movers.jpg",
@@ -101,10 +101,10 @@ const PackingAndMovingPage = () => {
                   Packing and Moving Made Easy
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  Hamad Movers offers a complete packing and moving service in
-                  Dubai. We supply everything — boxes, bubble wrap, stretch
-                  film, tape, and padding — and we pack it all up before moving
-                  day (or on the same day).
+                  Hamad Movers and Packers offers a complete packing and moving
+                  service in Dubai. We supply everything — boxes, bubble wrap,
+                  stretch film, tape, and padding — and we pack it all up before
+                  moving day (or on the same day).
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
