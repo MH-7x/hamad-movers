@@ -36,7 +36,7 @@ const AboutUsPage = () => {
             <div className="flex-1 space-y-6 text-center lg:text-left">
               <h1 className=" md:text-5xl text-3xl text-foreground leading-[1.1]">
                 About Hamad Movers and Packers <br />
-                <span className="text-primary">and Packers in Dubai</span>
+                <span className="text-primary"> in Dubai</span>
               </h1>
               <p className="text-lg  text-muted-foreground max-w-2xl mx-auto lg:mx-0">
                 A professional moving company based in Dubai. We handle home
