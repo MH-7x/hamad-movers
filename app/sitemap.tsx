@@ -79,6 +79,13 @@ const pages: MetadataRoute.Sitemap = [
     lastModified: "2026-06-12",
   },
   {
+    url: "/نقل-اثاث-دبي",
+    changeFrequency: "monthly",
+    priority: 0.8,
+    images: ["/loc/hamad-movers-dubai-professional-moving-team.jpg"],
+    lastModified: "2026-06-12",
+  },
+  {
     url: "/cheap-movers-dubai",
     changeFrequency: "weekly",
     priority: 0.9,

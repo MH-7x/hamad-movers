@@ -9,6 +9,7 @@ export const servicesList = [
   { title: "Furniture Movers Dubai", href: "/furniture-movers-dubai" },
   { title: "Packing Services Dubai", href: "/packing-and-moving-services" },
   { title: "Cheap Movers Dubai", href: "/cheap-movers-dubai" },
+  { title: "نقل اثاث دبي", href: "/نقل-اثاث-دبي" },
 ];
 
 export const locationList = [
