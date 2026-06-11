@@ -195,6 +195,10 @@ const MoversInSharjah = () => {
                 location: "Movers in Ras Al Khaimah",
                 path: "/movers-in-ras-al-khaimah",
               },
+              {
+                location: "Movers in Fujairah",
+                path: "/movers-in-fujairah",
+              },
             ].map((item, idx) => (
               <a
                 key={idx}

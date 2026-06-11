@@ -18,6 +18,7 @@ export const locationList = [
   { title: "Movers in Abu Dhabi", href: "/movers-in-abu-dhabi" },
   { title: "Movers in Al Ain", href: "/movers-in-al-ain" },
   { title: "Movers in Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
+  { title: "Movers in Fujairah", href: "/movers-in-fujairah" },
 ];
 
 export const HomePageFaqs = [
@@ -2855,6 +2856,73 @@ export const moversAlAinFAQs = [
           Dhabi and the destination is also inside a managed community, plan for
           2 weeks minimum. A quick call or WhatsApp is all it takes to check
           availability and start the process.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const FujairahFAQs = [
+  {
+    question: "How far in advance should I book my move in Fujairah?",
+    answer: (
+      <>
+        <p>
+          We recommend booking your move at least 2 to 3 days in advance to
+          ensure your preferred date and time are available.
+        </p>
+
+        <p>
+          If you require urgent moving services, contact us directly. We do our
+          best to accommodate same-day and emergency relocation requests
+          whenever trucks and moving crews are available.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide boxes and bubble wrap?",
+    answer: (
+      <>
+        <p>
+          Yes. Our full packing service includes all necessary packing materials
+          to protect your belongings during transit.
+        </p>
+
+        <ul>
+          <li>Strong carton boxes</li>
+          <li>Bubble wrap</li>
+          <li>Packing tape</li>
+          <li>Protective padding materials</li>
+          <li>Furniture wrapping supplies</li>
+        </ul>
+
+        <p>
+          Our team arrives fully equipped to professionally pack furniture,
+          electronics, kitchenware, and other household items before loading.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you move my furniture from Fujairah to Dubai?",
+    answer: (
+      <>
+        <p>
+          Absolutely. We provide reliable inter-emirate moving services across
+          the UAE and handle long-distance relocations on a daily basis.
+        </p>
+
+        <p>
+          Whether you are moving from Fujairah to Dubai, Abu Dhabi, Al Ain,
+          Sharjah, Ajman, or any other emirate, our experienced team ensures
+          your furniture and belongings are transported safely and securely.
+        </p>
+
+        <p>
+          We use suitable vehicles, professional packing techniques, and careful
+          handling procedures to ensure a smooth long-distance moving
+          experience.
         </p>
       </>
     ),

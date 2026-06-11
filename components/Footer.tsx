@@ -18,6 +18,7 @@ export const locationList = [
   { title: "Movers in Abu Dhabi", href: "/movers-in-abu-dhabi" },
   { title: "Movers in Al Ain", href: "/movers-in-al-ain" },
   { title: "Movers in Ras Al Khaimah", href: "/movers-in-ras-al-khaimah" },
+  { title: "Movers in Fujairah", href: "/movers-in-fujairah" },
 ];
 
 export const otherPagesList = [

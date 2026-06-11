@@ -286,6 +286,7 @@ const FurnitureMoversPage = () => {
                   location: "Ras Al Khaimah",
                   path: "/movers-in-ras-al-khaimah",
                 },
+                { location: "Fujairah", path: "/movers-in-fujairah" },
               ].map((item, idx) => (
                 <a
                   key={idx}
